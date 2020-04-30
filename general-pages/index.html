@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>مزرعه تیلدا | خانه</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/fontIcons/style.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="pages-header position-relative">
+      <nav class="navbar navbar-expand-lg navbar-light px-md-5 py-0">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/logo.png" height="30" alt="مزرعه تیلدا" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item pr-0 pr-md-4">
+              <a class="nav-link ir-r" href="index.html">خانه</a>
+            </li>
+
+            <li class="nav-item dropdown pr-0 pr-md-4">
+              <a
+                class="nav-link toggle ir-r"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                محصولات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item ir-r text-right text-white" href="#"
+                  >برنج طارم</a
+                >
+                <a class="dropdown-item ir-r text-right text-white" href="#"
+                  >برنج هاشمی</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item pr-0 pr-md-4">
+              <a class="nav-link ir-r" href="#">وبلاگ</a>
+            </li>
+
+            <li class="nav-item pr-0 pr-md-4">
+              <a class="nav-link ir-r" href="#">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <!-- Login Button -->
+          <button
+            type="button"
+            class="btn btn-primary ir-r d-block float-left login-btn mr-3"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            ورود/ثبت نام
+          </button>
+
+          <!-- Cart -->
+          <a
+            class="d-block float-left nav-link p-0 text-decoration-none mr-3 cart-btn position-relative"
+            href="#"
+          >
+            <!-- Cart's Icon -->
+            <i class="icon-cart nav-link p-0 icon d-block float-left"></i>
+
+            <!-- Order Counter -->
+            <span
+              class="counter ir-r text-white rounded-circle position-absolute text-center"
+              >1</span
+            >
+          </a>
+
+          <!-- Search Button -->
+          <i
+            class="search-btn float-left d-block icon-search nav-link p-0 icon cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+
+      <div class="search-box position-absolute w-100 h-100 px-md-5 bg-white">
+        <form class="d-block w-100 h-100" action="">
+          <input
+            type="search"
+            class="ir-r text-right form-control shadow-none rounded-0 border-0 d-block float-right h-100 p-0 search-input"
+            placeholder="دنبال چه چیزی می‌گردید؟ برنج، نام فروشنده، کشت اول و..."
+            name=""
+            id=""
+          />
+
+          <i
+            class="icon-close cursor-pointer close-btn d-block float-right text-center"
+          ></i>
+        </form>
+      </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div
+      class="modal login fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery-3.5.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

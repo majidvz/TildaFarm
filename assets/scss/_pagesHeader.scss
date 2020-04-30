@@ -1,0 +1,81 @@
+body {
+  height: 2000px;
+}
+// Pages Header
+
+.pages-header {
+  .navbar {
+    width: 100%;
+    background: #444;
+    transition: 0.3s;
+
+    .nav-link {
+      color: #fff;
+    }
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: white;
+      box-shadow: 5px 5px 15px #00000015;
+
+      .nav-link {
+        color: #666;
+      }
+    }
+  }
+  // Dropdown Menu
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+    top: calc(100% + 6px);
+  }
+
+  // Buttons on The Right
+  .buttons {
+    // Login Button
+    .login-btn {
+      margin-top: 10.5px;
+    }
+
+    // Icons
+    .icon {
+      line-height: 59px;
+      font-size: 1.5em;
+    }
+
+    // Cart Button
+    .cart-btn {
+      // Order Counter
+      .counter {
+        background: $green;
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        right: -5px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  // Search Box
+  .search-box {
+    top: -100%;
+    transition: 0.3s;
+    // Input
+    .search-input {
+      width: calc(100% - 59px);
+    }
+
+    // Close button
+    .close-btn {
+      width: 59px;
+      height: 59px;
+      line-height: 59px;
+      font-size: 1.5em;
+    }
+    &.active {
+      top: 0;
+    }
+  }
+}

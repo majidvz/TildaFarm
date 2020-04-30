@@ -1,0 +1,108 @@
+body {
+  height: 2000px;
+}
+
+.pages-header .navbar {
+  width: 100%;
+  background: #444;
+  transition: 0.3s;
+}
+.pages-header .navbar .nav-link {
+  color: #fff;
+}
+.pages-header .navbar.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  box-shadow: 5px 5px 15px #00000015;
+}
+.pages-header .navbar.active .nav-link {
+  color: #666;
+}
+.pages-header .dropdown-menu {
+  left: auto;
+  right: 0;
+  top: calc(100% + 6px);
+}
+.pages-header .buttons .login-btn {
+  margin-top: 10.5px;
+}
+.pages-header .buttons .icon {
+  line-height: 59px;
+  font-size: 1.5em;
+}
+.pages-header .buttons .cart-btn .counter {
+  background: #4caf50;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -5px;
+  line-height: 20px;
+}
+.pages-header .search-box {
+  top: -100%;
+  transition: 0.3s;
+}
+.pages-header .search-box .search-input {
+  width: calc(100% - 59px);
+}
+.pages-header .search-box .close-btn {
+  width: 59px;
+  height: 59px;
+  line-height: 59px;
+  font-size: 1.5em;
+}
+.pages-header .search-box.active {
+  top: 0;
+}
+
+@font-face {
+  font-family: iransans-light;
+  src: url(../fonts/iransans-light.woff);
+}
+@font-face {
+  font-family: iransans-regular;
+  src: url(../fonts/iransans-regular.woff);
+}
+@font-face {
+  font-family: iransans-medium;
+  src: url(../fonts/iransans-medium.woff);
+}
+@font-face {
+  font-family: iransans-bold;
+  src: url(../fonts/iransans-bold.woff);
+}
+* {
+  direction: rtl;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.outline-none {
+  outline: none !important;
+}
+
+.ir-l {
+  font-family: iransans-light;
+}
+.ir-r {
+  font-family: iransans-regular;
+}
+.ir-m {
+  font-family: iransans-medium;
+}
+.ir-b {
+  font-family: iransans-bold;
+}
+
+.btn-primary {
+  border-radius: 2.5px !important;
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+  box-shadow: 5px 5px 15px #99999915;
+}
+
+/*# sourceMappingURL=main.css.map */

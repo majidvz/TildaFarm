@@ -1,0 +1,56 @@
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+// Pages Header
+@import "pagesHeader";
+
+// Fonts
+@include font($ir-l);
+@include font($ir-r);
+@include font($ir-m);
+@include font($ir-b);
+
+// Public
+* {
+  direction: rtl;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.outline-none {
+  outline: none !important;
+}
+
+// Font Classes
+.ir- {
+  &l {
+    font-family: $ir-l;
+  }
+
+  &r {
+    font-family: $ir-r;
+  }
+
+  &m {
+    font-family: $ir-m;
+  }
+
+  &b {
+    font-family: $ir-b;
+  }
+}
+
+// Button Classes
+.btn- {
+  &primary {
+    border-radius: 2.5px !important;
+    background-color: $primary !important;
+    border-color: $primary !important;
+    box-shadow: 5px 5px 15px #99999915;
+  }
+}

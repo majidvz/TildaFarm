@@ -1,0 +1,7 @@
+// Font Generator
+@mixin font($name) {
+  @font-face {
+    font-family: $name;
+    src: url(../fonts/#{$name}.woff);
+  }
+}
