@@ -1,0 +1,23 @@
+// Index
+.index {
+  // Introduction
+  .intro {
+    height: calc(100vh - 100px);
+    // Page Header and Carousel Common Styles
+    .pages-header,
+    .intro-carousel {
+      top: 0;
+      left: 0;
+    }
+
+    // Pages Header
+    .pages-header {
+      z-index: 500;
+    }
+
+    // Introduction Carousel
+    .intro-carousel {
+      z-index: 250;
+    }
+  }
+}

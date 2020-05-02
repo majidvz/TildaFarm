@@ -1,9 +1,8 @@
 // Pages Header
 .pages-header {
   .navbar {
-    width: 100%;
-    background: #444;
     transition: 0.3s;
+    backdrop-filter: blur(10px);
 
     .nav-link {
       color: #fff;

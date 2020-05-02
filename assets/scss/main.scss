@@ -10,6 +10,9 @@
 // Pages Footer
 @import "pagesFooter";
 
+// General Index Page
+@import "index";
+
 // Fonts
 @include font($ir-l);
 @include font($ir-r);

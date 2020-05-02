@@ -1,7 +1,6 @@
 .pages-header .navbar {
-  width: 100%;
-  background: #444;
   transition: 0.3s;
+  backdrop-filter: blur(10px);
 }
 .pages-header .navbar .nav-link {
   color: #fff;
@@ -63,6 +62,21 @@
 }
 .pages-footer .trust-links .trust-item:not(:nth-child(3n)) {
   margin-left: 5%;
+}
+
+.index .intro {
+  height: calc(100vh - 100px);
+}
+.index .intro .pages-header,
+.index .intro .intro-carousel {
+  top: 0;
+  left: 0;
+}
+.index .intro .pages-header {
+  z-index: 500;
+}
+.index .intro .intro-carousel {
+  z-index: 250;
 }
 
 @font-face {
