@@ -7,11 +7,17 @@
 // Pages Header
 @import "pagesHeader";
 
+// Pages Footer
+@import "pagesFooter";
+
 // Fonts
 @include font($ir-l);
 @include font($ir-r);
 @include font($ir-m);
 @include font($ir-b);
+@include font($k-r);
+@include font($k-b);
+@include font($k-bl);
 
 // Public
 * {
@@ -45,6 +51,60 @@
   }
 }
 
+.k- {
+  &r {
+    font-family: $k-r;
+  }
+  &b {
+    font-family: $k-b;
+  }
+
+  &bl {
+    font-family: $k-bl;
+  }
+}
+
+// Text Colors
+.c- {
+  &dark {
+    color: #333 !important;
+  }
+
+  &regular {
+    color: #666 !important;
+  }
+
+  &grey {
+    color: #999 !important;
+    &-3 {
+      color: $grey-3;
+    }
+  }
+
+  &label {
+    color: $form-label;
+  }
+}
+
+// Font Sizes
+.fs- {
+  &regular {
+    font-size: 1em;
+  }
+
+  &big {
+    font-size: 1.2em;
+  }
+
+  &small {
+    font-size: 0.9em;
+  }
+
+  &icon {
+    font-size: 2em;
+  }
+}
+
 // Button Classes
 .btn- {
   &primary {
@@ -52,5 +112,46 @@
     background-color: $primary !important;
     border-color: $primary !important;
     box-shadow: 5px 5px 15px #99999915;
+  }
+}
+
+// Sections Padding
+.sp- {
+  &t,
+  &y {
+    padding-top: 100px;
+  }
+
+  &b,
+  &y {
+    padding-bottom: 100px;
+  }
+}
+
+// Sections Margin
+.sm- {
+  &t,
+  &y {
+    margin-top: 100px;
+  }
+
+  &b,
+  &y {
+    margin-bottom: 100px;
+  }
+}
+
+// Background Classes
+.bg- {
+  &body {
+    background: $bg-body;
+  }
+
+  &footer {
+    background: $bg-footer;
+  }
+
+  &green {
+    background: $green;
   }
 }

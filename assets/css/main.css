@@ -1,7 +1,3 @@
-body {
-  height: 2000px;
-}
-
 .pages-header .navbar {
   width: 100%;
   background: #444;
@@ -41,6 +37,7 @@ body {
   line-height: 20px;
 }
 .pages-header .search-box {
+  height: 59px;
   top: -100%;
   transition: 0.3s;
 }
@@ -55,6 +52,17 @@ body {
 }
 .pages-header .search-box.active {
   top: 0;
+}
+
+.login-modal .modal-title {
+  font-size: 2em;
+}
+
+.pages-footer .trust-links .trust-item {
+  width: 30%;
+}
+.pages-footer .trust-links .trust-item:not(:nth-child(3n)) {
+  margin-left: 5%;
 }
 
 @font-face {
@@ -72,6 +80,18 @@ body {
 @font-face {
   font-family: iransans-bold;
   src: url(../fonts/iransans-bold.woff);
+}
+@font-face {
+  font-family: kalameh-regular;
+  src: url(../fonts/kalameh-regular.woff);
+}
+@font-face {
+  font-family: kalameh-bold;
+  src: url(../fonts/kalameh-bold.woff);
+}
+@font-face {
+  font-family: kalameh-black;
+  src: url(../fonts/kalameh-black.woff);
 }
 * {
   direction: rtl;
@@ -98,11 +118,74 @@ body {
   font-family: iransans-bold;
 }
 
+.k-r {
+  font-family: kalameh-regular;
+}
+.k-b {
+  font-family: kalameh-bold;
+}
+.k-bl {
+  font-family: kalameh-black;
+}
+
+.c-dark {
+  color: #333 !important;
+}
+.c-regular {
+  color: #666 !important;
+}
+.c-grey {
+  color: #999 !important;
+}
+.c-grey-3 {
+  color: #cccccc;
+}
+.c-label {
+  color: #0d47a1;
+}
+
+.fs-regular {
+  font-size: 1em;
+}
+.fs-big {
+  font-size: 1.2em;
+}
+.fs-small {
+  font-size: 0.9em;
+}
+.fs-icon {
+  font-size: 2em;
+}
+
 .btn-primary {
   border-radius: 2.5px !important;
   background-color: #2196f3 !important;
   border-color: #2196f3 !important;
   box-shadow: 5px 5px 15px #99999915;
+}
+
+.sp-t, .sp-y {
+  padding-top: 100px;
+}
+.sp-b, .sp-y {
+  padding-bottom: 100px;
+}
+
+.sm-t, .sm-y {
+  margin-top: 100px;
+}
+.sm-b, .sm-y {
+  margin-bottom: 100px;
+}
+
+.bg-body {
+  background: #fafafa;
+}
+.bg-footer {
+  background: #f6f6f6;
+}
+.bg-green {
+  background: #4caf50;
 }
 
 /*# sourceMappingURL=main.css.map */

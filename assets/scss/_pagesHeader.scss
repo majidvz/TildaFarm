@@ -1,8 +1,4 @@
-body {
-  height: 2000px;
-}
 // Pages Header
-
 .pages-header {
   .navbar {
     width: 100%;
@@ -60,6 +56,7 @@ body {
 
   // Search Box
   .search-box {
+    height: 59px;
     top: -100%;
     transition: 0.3s;
     // Input
@@ -77,5 +74,13 @@ body {
     &.active {
       top: 0;
     }
+  }
+}
+
+// Login Modal
+.login-modal {
+  // Title
+  .modal-title {
+    font-size: 2em;
   }
 }
