@@ -17,7 +17,54 @@
 
     // Introduction Carousel
     .intro-carousel {
+      bottom: 0;
+      left: 0;
       z-index: 250;
+
+      .owl-nav {
+        button[role="presentation"] {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          color: white;
+          font-size: 4em;
+
+          &.owl {
+            &-next {
+              left: 10px;
+            }
+            &-prev {
+              right: 10px;
+            }
+          }
+        }
+      }
+
+      // Carousel Items
+      .item {
+        background-size: cover !important;
+        height: calc(100vh - 100px);
+
+        // Texts
+        .slide-text {
+          font-size: 4em;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: calc(100% - 80px);
+          text-shadow: 0 5px 15px #00000030;
+        }
+
+        // First Slide
+        &.slide-1 {
+          background: url(../img/index-slide-1.png) no-repeat center;
+        }
+
+        // Second Slide
+        &.slide-2 {
+          background: url(../img/index-slide-2.png) no-repeat center;
+        }
+      }
     }
   }
 }

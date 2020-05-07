@@ -69,6 +69,9 @@
 
 // Text Colors
 .c- {
+  &star {
+    color: $gold;
+  }
   &dark {
     color: #333 !important;
   }
@@ -106,6 +109,10 @@
   &icon {
     font-size: 2em;
   }
+}
+
+.text-decoration-line {
+  text-decoration: line-through;
 }
 
 // Button Classes
@@ -156,5 +163,96 @@
 
   &green {
     background: $green;
+  }
+}
+
+// Section's Header
+.section-header {
+  height: 50px;
+  // Title
+  .title {
+    line-height: 50px;
+    font-size: 2em;
+    background: url(../img/bullet-bg.svg) no-repeat center right, $bg-body;
+    background-size: auto 100% !important;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  // More Button
+  .more {
+    line-height: 50px;
+    background: $bg-body;
+    padding-right: 10px;
+  }
+
+  // Line
+  hr {
+    z-index: -250;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #eee;
+  }
+}
+
+// Cards Style
+.card {
+  box-shadow: 5px 5px 15px #99999915;
+  transition: 0.3s;
+  border-radius: 5px;
+
+  // When Card is Hovering
+  &:hover {
+    box-shadow: 5px 5px 15px #99999930;
+  }
+
+  // Product Card
+  &.product-card {
+    // Header
+    .card-header {
+      // Add to Favorites
+      .add-favorites {
+        top: 0;
+        left: 0;
+        & > i {
+          text-shadow: 2px 2px 5px #00000030;
+          font-size: 2em;
+        }
+      }
+
+      // Seller Details
+      .product-seller {
+        bottom: 0;
+        left: 0;
+        transform: translateY(50%);
+        .seller- {
+          &img {
+            width: 30%;
+            border: 3px solid #ffffff;
+          }
+
+          &name {
+            width: 70%;
+          }
+        }
+      }
+
+      .product-location {
+        bottom: 10px;
+        left: 0;
+        background: $green;
+        padding-left: 10px;
+        padding-right: 15px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+
+    // Body
+    .card-body {
+      padding-top: 20%;
+    }
   }
 }
