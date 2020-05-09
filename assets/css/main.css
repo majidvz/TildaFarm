@@ -1,9 +1,12 @@
+.pages-header {
+  z-index: 500;
+}
 .pages-header .navbar {
   transition: 0.3s;
   backdrop-filter: blur(10px);
 }
 .pages-header .navbar .nav-link {
-  color: #fff;
+  color: #666;
 }
 .pages-header .navbar.active {
   position: fixed;
@@ -11,9 +14,6 @@
   left: 0;
   background: white;
   box-shadow: 5px 5px 15px #00000015;
-}
-.pages-header .navbar.active .nav-link {
-  color: #666;
 }
 .pages-header .dropdown-menu {
   left: auto;
@@ -75,6 +75,12 @@
 .index .intro .pages-header {
   z-index: 500;
 }
+.index .intro .pages-header .navbar .nav-link {
+  color: #ffffff;
+}
+.index .intro .pages-header .navbar.active .nav-link {
+  color: #666;
+}
 .index .intro .intro-carousel {
   bottom: 0;
   left: 0;
@@ -112,6 +118,46 @@
   background: url(../img/index-slide-2.png) no-repeat center;
 }
 
+.register .steps-holder .line {
+  background: #2196f3;
+  height: 3px;
+  left: 0;
+  bottom: 8px;
+  z-index: -20;
+}
+.register .steps-holder .step .bullet {
+  transition: 0.3s;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 3px solid #2196f3;
+  background: #ffffff;
+}
+.register .steps-holder .step.active .bullet {
+  background: #2196f3;
+}
+.register .holder {
+  box-shadow: 5px 5px 15px #99999915;
+}
+.register .holder .step-content {
+  height: 0;
+  overflow: hidden;
+}
+.register .holder .step-content.active {
+  height: auto;
+  overflow: inherit;
+}
+
+@media only screen and (max-width: 991.99px) {
+  .register .register-header {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .register .register-header {
+    width: 40%;
+  }
+}
 @font-face {
   font-family: iransans-light;
   src: url(../fonts/iransans-light.woff);

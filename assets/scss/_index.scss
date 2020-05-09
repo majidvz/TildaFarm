@@ -3,6 +3,7 @@
   // Introduction
   .intro {
     height: calc(100vh - 100px);
+
     // Page Header and Carousel Common Styles
     .pages-header,
     .intro-carousel {
@@ -13,6 +14,17 @@
     // Pages Header
     .pages-header {
       z-index: 500;
+
+      .navbar {
+        .nav-link {
+          color: #ffffff;
+        }
+        &.active {
+          .nav-link {
+            color: #666;
+          }
+        }
+      }
     }
 
     // Introduction Carousel

@@ -1,0 +1,45 @@
+// Register
+.register {
+  // Steps
+  .steps-holder {
+    .line {
+      background: $primary;
+      height: 3px;
+      left: 0;
+      bottom: 8px;
+      z-index: -20;
+    }
+    .step {
+      .bullet {
+        transition: 0.3s;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 3px solid $primary;
+        background: #ffffff;
+      }
+
+      //   When a Step is Active
+      &.active {
+        .bullet {
+          background: $primary;
+        }
+      }
+    }
+  }
+
+  // Content Holder
+  .holder {
+    box-shadow: 5px 5px 15px #99999915;
+
+    // Steps Content
+    .step-content {
+      height: 0;
+      overflow: hidden;
+      &.active {
+        height: auto;
+        overflow: inherit;
+      }
+    }
+  }
+}

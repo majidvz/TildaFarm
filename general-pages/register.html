@@ -78,7 +78,7 @@
             type="button"
             class="btn btn-primary ir-r d-block float-left login-btn mr-3"
             data-toggle="modal"
-            data-target="#exampleModal"
+            data-target="#loginModal"
           >
             ورود/ثبت نام
           </button>
@@ -123,16 +123,232 @@
     </header>
 
     <!-- Register Form -->
-    <section class="register container sp-t">
-      <div class="row">
-        <aside class="col-md-6">
-          <!-- Header   -->
-          <header>
-            <h3 class="d-block text-center k-bl c-dark">ثبت نام</h3>
-          </header>
-        </aside>
-      </div>
-    </section>
+    <form action="">
+      <section class="register container sp-t">
+        <!-- Header -->
+        <header class="register-header mb-3 mx-auto">
+          <!-- Title -->
+          <h3 class="d-block text-center k-bl c-dark mb-3">ثبت نام</h3>
+
+          <!-- Steps -->
+          <div
+            class="steps-holder flex-row-reverse d-flex justify-content-between position-relative"
+          >
+            <hr class="position-absolute line m-0 w-100" />
+
+            <!-- Step One -->
+            <div class="step step-1 active prev-btn cursor-pointer">
+              <span class="d-block text-left ir-r fs-small c-regular"
+                >ثبت اطلاعات</span
+              >
+              <div class="bullet mr-auto"></div>
+            </div>
+
+            <!-- Step Two -->
+            <div class="step step-2 next-btn cursor-pointer">
+              <span class="d-block text-center ir-r fs-small c-regular"
+                >تایید شماره موبایل</span
+              >
+              <div class="bullet mx-auto"></div>
+            </div>
+
+            <!-- Step Three -->
+            <div class="step step-3">
+              <span class="d-block text-right ir-r fs-small c-regular"
+                >تمام!</span
+              >
+              <div class="bullet"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <!-- 1st Step Content -->
+            <div class="holder p-3 rounded-lg w-100">
+              <div class="step-content step-1 active">
+                <!-- Full Name -->
+                <div
+                  class="form-group border border-secondary rounded p-2 mb-3"
+                >
+                  <!-- Lable -->
+                  <label
+                    class="d-block text-right ir-r c-label mb-0 fs-small"
+                    for="fullName"
+                    >نام و نام خانوادگی</label
+                  >
+
+                  <!-- Input -->
+                  <input
+                    type="tel"
+                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                    id="fullName"
+                    placeholder="نام و نام خانوادگی"
+                  />
+
+                  <!-- Error Message -->
+                  <small
+                    id=""
+                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                    >پیام ارور</small
+                  >
+                </div>
+
+                <!-- Phone Number -->
+                <div
+                  class="form-group border border-secondary rounded p-2 mb-3"
+                >
+                  <!-- Lable -->
+                  <label
+                    class="d-block text-right ir-r c-label mb-0 fs-small"
+                    for="phoneNumber"
+                    >شماره موبایل</label
+                  >
+
+                  <!-- Input -->
+                  <input
+                    type="tel"
+                    pattern="[09][0-9]{9}"
+                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                    id="phoneNumber"
+                    placeholder="09120000000"
+                  />
+
+                  <!-- Error Message -->
+                  <small
+                    id=""
+                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                    >پیام ارور</small
+                  >
+                </div>
+
+                <!-- Password -->
+                <div
+                  class="form-group border border-secondary rounded p-2 mb-3"
+                >
+                  <!-- Lable -->
+                  <label
+                    class="d-block text-right ir-r c-label mb-0 fs-small"
+                    for="password"
+                    >رمز عبور</label
+                  >
+
+                  <!-- Input -->
+                  <input
+                    type="tel"
+                    pattern="[09][0-9]{9}"
+                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                    id="password"
+                    placeholder="رمز عبور خود را وارد کنید"
+                  />
+
+                  <!-- Error Message -->
+                  <small
+                    id=""
+                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                    >پیام ارور</small
+                  >
+                </div>
+
+                <!-- Confirm Password -->
+                <div
+                  class="form-group border border-secondary rounded p-2 mb-3"
+                >
+                  <!-- Lable -->
+                  <label
+                    class="d-block text-right ir-r c-label mb-0 fs-small"
+                    for="password"
+                    >تایید رمز عبور</label
+                  >
+
+                  <!-- Input -->
+                  <input
+                    type="tel"
+                    pattern="[09][0-9]{9}"
+                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                    id="password"
+                    placeholder="رمز عبور خود را دوباره وارد کنید"
+                  />
+
+                  <!-- Error Message -->
+                  <small
+                    id=""
+                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                    >پیام ارور</small
+                  >
+                </div>
+
+                <!-- Next Step Button -->
+                <span
+                  class="btn btn-primary ir-r d-block w-25 mb-3 next-btn cursor-pointer"
+                >
+                  مرحله بعد
+                </span>
+
+                <!-- Login Button -->
+                <button
+                  type="button"
+                  class="btn ir-r d-block px-0 shadow-none"
+                  data-toggle="modal"
+                  data-target="#loginModal"
+                >
+                  عضو هستید؟ وارد شوید.
+                </button>
+              </div>
+
+              <!-- 2nd Step Content -->
+              <div class="step-content step-2">
+                <!-- Confirm Code -->
+                <div
+                  class="form-group border border-secondary rounded p-2 mb-3"
+                >
+                  <!-- Lable -->
+                  <label
+                    class="d-block text-right ir-r c-label mb-0 fs-small"
+                    for="confirmCode"
+                    >کد ارسال شده را وارد کنید</label
+                  >
+
+                  <!-- Input -->
+                  <input
+                    type="text"
+                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                    id="confirmCode"
+                    placeholder="کد تایید"
+                  />
+
+                  <!-- Error Message -->
+                  <small
+                    id=""
+                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                    >پیام ارور</small
+                  >
+                </div>
+
+                <footer class="d-flex justify-content-between mb-3">
+                  <!-- Next Step Button -->
+                  <button class="btn btn-primary ir-r d-block mb-3">
+                    تایید
+                  </button>
+
+                  <!-- Next Step Button -->
+                  <button class="btn btn-outline-secondary ir-r d-block mb-3">
+                    ارسال مجدد
+                  </button>
+                </footer>
+
+                <!-- Next Step Button -->
+                <span
+                  class="btn w-25 cursor-pointer prev-btn ir-r c-regular fs-small d-block mb-3"
+                >
+                  بازگشت به مرحله قبل
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
 
     <!-- Footer -->
     <footer class="pages-footer container-fluid sp-t sm-t bg-footer">
@@ -245,17 +461,17 @@
     <!-- Login Modal -->
     <div
       class="modal login-modal fade"
-      id="exampleModal"
+      id="loginModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="loginModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <!-- Header -->
           <div class="modal-header border-0 pb-0">
-            <h5 class="modal-title k-bl c-dark" id="exampleModalLabel">
+            <h5 class="modal-title k-bl c-dark" id="loginModalLabel">
               ورود
             </h5>
           </div>
@@ -347,5 +563,16 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+      $(".next-btn").on("click", function () {
+        $(".step.step-1, .step-content.step-1").removeClass("active");
+        $(".step.step-2, .step-content.step-2").addClass("active");
+      });
+
+      $(".prev-btn").on("click", function () {
+        $(".step.step-1, .step-content.step-1").addClass("active");
+        $(".step.step-2, .step-content.step-2").removeClass("active");
+      });
+    </script>
   </body>
 </html>

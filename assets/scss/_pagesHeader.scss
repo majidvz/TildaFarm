@@ -1,11 +1,12 @@
 // Pages Header
 .pages-header {
+  z-index: 500;
   .navbar {
     transition: 0.3s;
     backdrop-filter: blur(10px);
 
     .nav-link {
-      color: #fff;
+      color: #666;
     }
     &.active {
       position: fixed;
@@ -13,10 +14,6 @@
       left: 0;
       background: white;
       box-shadow: 5px 5px 15px #00000015;
-
-      .nav-link {
-        color: #666;
-      }
     }
   }
   // Dropdown Menu

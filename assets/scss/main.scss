@@ -13,6 +13,15 @@
 // General Index Page
 @import "index";
 
+// Register And Forget Password
+@import "register";
+
+// Responsive Mode
+@import "responsive";
+
+// Desktop Mode
+@import "desktop";
+
 // Fonts
 @include font($ir-l);
 @include font($ir-r);
