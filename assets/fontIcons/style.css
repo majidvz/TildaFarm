@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'TildaFarm';
-  src:  url('fonts/TildaFarm.eot?vujfv6');
-  src:  url('fonts/TildaFarm.eot?vujfv6#iefix') format('embedded-opentype'),
-    url('fonts/TildaFarm.ttf?vujfv6') format('truetype'),
-    url('fonts/TildaFarm.woff?vujfv6') format('woff'),
-    url('fonts/TildaFarm.svg?vujfv6#TildaFarm') format('svg');
+  src:  url('fonts/TildaFarm.eot?t30hzj');
+  src:  url('fonts/TildaFarm.eot?t30hzj#iefix') format('embedded-opentype'),
+    url('fonts/TildaFarm.ttf?t30hzj') format('truetype'),
+    url('fonts/TildaFarm.woff?t30hzj') format('woff'),
+    url('fonts/TildaFarm.svg?t30hzj#TildaFarm') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -37,8 +37,17 @@ i {
 .icon-star-o:before {
   content: "\f006";
 }
+.icon-check:before {
+  content: "\f00c";
+}
+.icon-map-marker:before {
+  content: "\f041";
+}
 .icon-heart-o:before {
   content: "\f08a";
+}
+.icon-phone:before {
+  content: "\f095";
 }
 .icon-instagram:before {
   content: "\f16d";

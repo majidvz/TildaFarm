@@ -1,0 +1,42 @@
+// Products Page
+.products {
+  // Filters
+
+  // Result
+  .result {
+    // Header
+    .header {
+      height: 200px;
+      background: url(../img/products-page-header.png) no-repeat center;
+      background-size: cover;
+      border-radius: 5px;
+
+      // Search Box
+      .p-search-box {
+        // Input
+        .s-input {
+          -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+          -moz-box-sizing: border-box; /* Firefox, other Gecko */
+          box-sizing: border-box;
+          height: 40px;
+          border-radius: 2.5px;
+          box-shadow: 5px 5px 15px #00000015;
+        }
+        .s-btn {
+          font-size: 1.5em;
+          left: 0;
+          top: 0;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+
+  // Filter Button
+  .filter-btn {
+    height: 40px;
+    line-height: 40px;
+  }
+}

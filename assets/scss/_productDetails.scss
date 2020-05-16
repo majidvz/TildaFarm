@@ -1,0 +1,26 @@
+// Product Details
+.product-details {
+  // Seller Other Products
+  .other-products {
+    // Header
+    .section-header {
+      margin-bottom: 70px;
+    }
+
+    // Farmer's Biography
+    .farmer-bio {
+      box-shadow: 5px 5px 15px #99999920;
+      border-radius: 5px;
+      padding: 60px 20px 20px 20px;
+
+      // Farmer's Image
+      .farmer-img {
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

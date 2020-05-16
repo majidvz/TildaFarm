@@ -16,6 +16,15 @@
 // Register And Forget Password
 @import "register";
 
+// Products
+@import "products";
+
+// Product Details
+@import "productDetails";
+
+// Contact us and Ticketing
+@import "contactUs";
+
 // Responsive Mode
 @import "responsive";
 
@@ -36,12 +45,42 @@
   direction: rtl;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .outline-none {
   outline: none !important;
+}
+
+textarea {
+  resize: none !important;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+.navigation .pagination .page-item {
+  .page-link {
+    border-radius: 2.5px;
+    box-shadow: 5px 5px 15px #99999950;
+  }
+  &.active {
+    background: $green;
+    .page-link {
+      color: white !important;
+    }
+  }
 }
 
 // Font Classes
@@ -51,7 +90,7 @@
   }
 
   &r {
-    font-family: $ir-r;
+    font-family: $ir-r !important;
   }
 
   &m {
@@ -116,7 +155,7 @@
   }
 
   &icon {
-    font-size: 2em;
+    font-size: 2em !important;
   }
 }
 
@@ -172,6 +211,10 @@
 
   &green {
     background: $green;
+  }
+
+  &primary {
+    background: $primary !important;
   }
 }
 
@@ -233,7 +276,7 @@
       // Seller Details
       .product-seller {
         bottom: 0;
-        left: 0;
+        right: 0;
         transform: translateY(50%);
         .seller- {
           &img {
@@ -262,6 +305,33 @@
     // Body
     .card-body {
       padding-top: 20%;
+    }
+  }
+}
+
+// Checking Check Box
+input[type="checkbox"] {
+  & + .check-box-label > i {
+    width: 17px;
+    height: 17px;
+    transform: translateY(3.5px);
+    transition: 0.3s;
+    &::before {
+      transition: 0.3s;
+    }
+  }
+
+  &:checked + .check-box-label > i {
+    border: 1px solid #666;
+    &::before {
+      content: "\f00c";
+    }
+  }
+
+  &:not(:checked) + .check-box-label > i {
+    border: 1px solid #ccc;
+    &::before {
+      content: "";
     }
   }
 }

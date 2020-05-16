@@ -36,3 +36,12 @@ $(".product-card .add-favorites").click(function () {
     $(this).children().removeClass("icon-heart").addClass("icon-heart-o");
   }
 });
+
+// Product Filter Button
+$(".products .filter-btn").on("click", function () {
+  $(".products .filters").addClass("open");
+});
+
+$(".products .close-btn").on("click", function () {
+  $(".products .filters").removeClass("open");
+});
