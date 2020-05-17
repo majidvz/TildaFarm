@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title -->
-    <title>مزرعه تیلدا | بازیابی رمز عبور</title>
+    <title>مزرعه تیلدا | واژگان</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/reset.min.css" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
 
-  <body class="bg-body">
+  <body class="bg-body blog">
     <!-- Header -->
     <header class="pages-header position-fixed w-100">
       <nav class="navbar w-100 navbar-expand-lg navbar-light px-md-5 py-0">
@@ -122,197 +122,179 @@
       </div>
     </header>
 
-    <!-- Register Form -->
-    <form action="">
-      <section class="register container sp-t">
-        <!-- Header -->
-        <header class="register-header mb-3 mx-auto">
-          <!-- Title -->
-          <h3 class="d-block text-center k-bl c-dark mb-3">بازیابی رمز عبور</h3>
-
-          <!-- Steps -->
-          <div
-            class="steps-holder flex-row-reverse d-flex justify-content-between position-relative"
+    <!-- Category -->
+    <section class="container category sm-t">
+      <div class="row d-flex flex-row justify-content-between">
+        <aside class="col-6 col-md-4 col-lg-2 mb-3 mb-md-0">
+          <a
+            class="d-block w-100 ir-b text-white text-center text-decoration-none c-item box-shadow rice"
+            href="blog-posts.html"
           >
-            <hr class="position-absolute line m-0 w-100" />
+            برنج</a
+          >
+        </aside>
 
-            <!-- Step One -->
-            <div class="step step-1 active cursor-pointer">
-              <span class="d-block text-left ir-r fs-small c-regular"
-                >شماره موبایل</span
-              >
-              <div class="bullet mr-auto"></div>
-            </div>
+        <aside class="col-6 col-md-4 col-lg-2 mb-3 mb-md-0">
+          <a
+            class="d-block w-100 ir-b text-white text-center text-decoration-none c-item box-shadow rice"
+            href="blog-posts.html"
+          >
+            داستان ها</a
+          >
+        </aside>
 
-            <!-- Step Two -->
-            <div class="step step-2 cursor-pointer">
-              <span class="d-block text-center ir-r fs-small c-regular"
-                >تایید شماره موبایل</span
-              >
-              <div class="bullet mx-auto"></div>
-            </div>
+        <aside class="col-6 col-md-4 col-lg-2 mb-3 mb-md-0">
+          <a
+            class="d-block w-100 ir-b text-white text-center text-decoration-none c-item box-shadow rice"
+            href="blog-words.html"
+          >
+            کلمات</a
+          >
+        </aside>
 
-            <!-- Step Three -->
-            <div class="step step-3">
-              <span class="d-block text-right ir-r fs-small c-regular"
-                >ثبت رمز جدید</span
+        <aside class="col-6 col-md-4 col-lg-2 mb-3 mb-md-0">
+          <a
+            class="d-block w-100 ir-b text-white text-center text-decoration-none c-item box-shadow rice"
+            href="blog-posts.html"
+          >
+            داستان ها</a
+          >
+        </aside>
+
+        <aside class="col-6 col-md-4 col-lg-2 mb-0">
+          <a
+            class="d-block w-100 ir-b text-white text-center text-decoration-none c-item box-shadow rice"
+            href="blog-posts.html"
+          >
+            برنج</a
+          >
+        </aside>
+      </div>
+    </section>
+
+    <!-- Words -->
+    <section class="container sm-t">
+      <!-- Header -->
+      <header
+        class="section-header d-flex flex-row justify-content-center position-relative mb-3"
+      >
+        <div class="k-bl c-dark title">واژگان</div>
+      </header>
+
+      <div class="row">
+        <aside class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title ir-r c-dark fs-regular d-block text-right">
+                برنج دیم
+              </h5>
+              <p
+                class="card-text ir-r c-regular fs-regular d-block text-justify"
               >
-              <div class="bullet"></div>
+                [کشاورزی-زراعت و اصلاح نباتات] برنجی که آبیاری نمیشود
+              </p>
             </div>
           </div>
-        </header>
 
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="holder p-3 rounded-lg w-100">
-              <!-- 1st Step Content -->
-              <div class="step-content step-1 active">
-                <!-- Phone Number -->
-                <div
-                  class="form-group border border-secondary rounded p-2 mb-3"
-                >
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="phoneNumber"
-                    >شماره موبایل</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="tel"
-                    pattern="[09][0-9]{9}"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="phoneNumber"
-                    placeholder="09120000000"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <!-- Next Step Button -->
-                <button
-                  type="submit"
-                  class="btn btn-primary ir-r d-block w-25 cursor-pointer"
-                >
-                  تایید
-                </button>
-              </div>
-
-              <!-- 2nd Step Content -->
-              <div class="step-content step-2">
-                <!-- Confirm Code -->
-                <div class="form-group border border-secondary rounded p-2">
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="confirmCode"
-                    >کد ارسال شده را وارد کنید</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="text"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="confirmCode"
-                    placeholder="کد تایید"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <footer class="d-flex justify-content-between">
-                  <!-- Next Step Button -->
-                  <button class="btn btn-primary ir-r d-block">
-                    تایید
-                  </button>
-
-                  <!-- Next Step Button -->
-                  <button class="btn btn-outline-secondary ir-r d-block">
-                    ارسال مجدد
-                  </button>
-                </footer>
-              </div>
-
-              <!-- 3nd Step Content -->
-              <div class="step-content step-3">
-                <!-- New Password -->
-                <div
-                  class="form-group border border-secondary rounded p-2 mb-3"
-                >
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="newPassword"
-                    >رمز عبور جدید</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="text"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="newPassword"
-                    placeholder="رمز عبور جدید"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <!-- Confirm Password -->
-                <div
-                  class="form-group border border-secondary rounded p-2 mb-3"
-                >
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="confirmNewPassword"
-                    >تایید رمز عبور جدید</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="text"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="confirmNewPassword"
-                    placeholder="تایید رمز عبور جدید"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary ir-r d-block mb-3">
-                  ثبت
-                </button>
-              </div>
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title ir-r c-dark fs-regular d-block text-right">
+                برنج سفید
+              </h5>
+              <p
+                class="card-text ir-r c-regular fs-regular d-block text-justify"
+              >
+                [علوم و فنّاوری غذا] برنجی که سبوس و جوانۀ آن به‌طور کامل گرفته
+                شده باشد
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-    </form>
+        </aside>
+
+        <aside class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title ir-r c-dark fs-regular d-block text-right">
+                پاخورۀ برنج
+              </h5>
+              <p
+                class="card-text ir-r c-regular fs-regular d-block text-justify"
+              >
+                [کشاورزی-زراعت و اصلاح نباتات] نوعی بیماری قارچی که در آن غلاف
+                طوقۀ برنج قهوه‌ای تیره می‌شود و بوتۀ آن می‌خوابد
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title ir-r c-dark fs-regular d-block text-right">
+                برنج سبوس‌دار
+              </h5>
+              <p
+                class="card-text ir-r c-regular fs-regular d-block text-justify"
+              >
+                [علوم و فنّاوری غذا] دانۀ کامل برنج، یعنی شلتوک، که پوستۀ
+                غیرخوارکی آن گرفته شده باشد
+              </p>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title ir-r c-dark fs-regular d-block text-right">
+                پلا برنج
+              </h5>
+              <p
+                class="card-text ir-r c-regular fs-regular d-block text-justify"
+              >
+                در زبان مازندرانی به برنج پخته شده، پِلا گفته میشود.
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h5 class="card-title ir-r c-dark fs-regular d-block text-right">
+                برنج زار
+              </h5>
+              <p
+                class="card-text ir-r c-regular fs-regular d-block text-justify"
+              >
+                زمینی که در آن برنج کاشته باشند؛ کشتزار برنج؛ شالیزار.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="row d-flex flex-row justify-content-center mt-3">
+        <nav class="navigation" aria-label="Page navigation example" dir="ltr">
+          <ul class="pagination">
+            <li class="page-item shadow-none ml-3">
+              <a class="page-link border-0 c-regular ir-r" href="#">صفحه قبل</a>
+            </li>
+            <li class="page-item shadow-none ml-3 active">
+              <a class="page-link border-0 c-regular ir-r" href="#">1</a>
+            </li>
+            <li class="page-item shadow-none ml-3">
+              <a class="page-link border-0 c-regular ir-r" href="#">2</a>
+            </li>
+            <li class="page-item shadow-none ml-3">
+              <a class="page-link border-0 c-regular ir-r" href="#">3</a>
+            </li>
+            <li class="page-item shadow-none">
+              <a class="page-link border-0 c-regular ir-r" href="#">صفحه بعد</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="pages-footer container-fluid sp-t sm-t bg-footer">
+    <footer class="pages-footer container-fluid sp-t bg-footer">
       <div class="row px-3 px-md-5">
         <!-- Our Company -->
         <aside class="col-md-3 mb-5 mb-md-0">
@@ -524,5 +506,17 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+      $(".next-btn").on("click", function () {
+        $(".step.step-1, .step-content.step-1").removeClass("active");
+        $(".step.step-2, .step-content.step-2").addClass("active");
+      });
+
+      $(".prev-btn").on("click", function () {
+        $(".step.step-1, .step-content.step-1").addClass("active");
+        $(".step.step-2, .step-content.step-2").removeClass("active");
+      });
+    </script>
   </body>
 </html>
+<!DOCTYPE html>

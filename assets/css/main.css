@@ -194,6 +194,18 @@
   height: 80px;
 }
 
+.blog .category .c-item {
+  height: 60px;
+  line-height: 60px;
+  text-shadow: 0 5px 10px #00000060;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-size: cover;
+}
+.blog .category .c-item.rice {
+  background: url(../img/bc-rice.png) no-repeat left center;
+}
+
 .contact-us .connection-way .icon,
 .ticketing .connection-way .icon {
   width: 50px;
@@ -352,6 +364,10 @@ a:focus {
 }
 .navigation .pagination .page-item.active .page-link {
   color: white !important;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 15px #99999915;
 }
 
 .ir-l {

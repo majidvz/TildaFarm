@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title -->
-    <title>مزرعه تیلدا | بازیابی رمز عبور</title>
+    <title>مزرعه تیلدا | سفارش با موفقیت ثبت شد</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/reset.min.css" />
@@ -122,197 +122,34 @@
       </div>
     </header>
 
-    <!-- Register Form -->
-    <form action="">
-      <section class="register container sp-t">
-        <!-- Header -->
-        <header class="register-header mb-3 mx-auto">
-          <!-- Title -->
-          <h3 class="d-block text-center k-bl c-dark mb-3">بازیابی رمز عبور</h3>
+    <section class="container sm-t">
+      <div class="row">
+        <aside class="col-md-5 mx-md-auto">
+          <img
+            class="d-block w-50 mx-auto mb-5"
+            src="../assets/img/order_confirmed.svg"
+            alt="خرید موفق"
+          />
 
-          <!-- Steps -->
           <div
-            class="steps-holder flex-row-reverse d-flex justify-content-between position-relative"
+            class="rounded p-3 box-shadow d-flex flex-column align-items-center"
           >
-            <hr class="position-absolute line m-0 w-100" />
+            <p class="d-block text-center fs-regular mb-3 c-regular ir-r">
+              سفارش با موفقیت ثبت شد.
+            </p>
 
-            <!-- Step One -->
-            <div class="step step-1 active cursor-pointer">
-              <span class="d-block text-left ir-r fs-small c-regular"
-                >شماره موبایل</span
-              >
-              <div class="bullet mr-auto"></div>
-            </div>
-
-            <!-- Step Two -->
-            <div class="step step-2 cursor-pointer">
-              <span class="d-block text-center ir-r fs-small c-regular"
-                >تایید شماره موبایل</span
-              >
-              <div class="bullet mx-auto"></div>
-            </div>
-
-            <!-- Step Three -->
-            <div class="step step-3">
-              <span class="d-block text-right ir-r fs-small c-regular"
-                >ثبت رمز جدید</span
-              >
-              <div class="bullet"></div>
-            </div>
+            <a
+              class="text-decoration-none fs-regular mb-0 ir-r"
+              href="./index.html"
+              >بازگشت به خانه</a
+            >
           </div>
-        </header>
-
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <div class="holder p-3 rounded-lg w-100">
-              <!-- 1st Step Content -->
-              <div class="step-content step-1 active">
-                <!-- Phone Number -->
-                <div
-                  class="form-group border border-secondary rounded p-2 mb-3"
-                >
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="phoneNumber"
-                    >شماره موبایل</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="tel"
-                    pattern="[09][0-9]{9}"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="phoneNumber"
-                    placeholder="09120000000"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <!-- Next Step Button -->
-                <button
-                  type="submit"
-                  class="btn btn-primary ir-r d-block w-25 cursor-pointer"
-                >
-                  تایید
-                </button>
-              </div>
-
-              <!-- 2nd Step Content -->
-              <div class="step-content step-2">
-                <!-- Confirm Code -->
-                <div class="form-group border border-secondary rounded p-2">
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="confirmCode"
-                    >کد ارسال شده را وارد کنید</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="text"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="confirmCode"
-                    placeholder="کد تایید"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <footer class="d-flex justify-content-between">
-                  <!-- Next Step Button -->
-                  <button class="btn btn-primary ir-r d-block">
-                    تایید
-                  </button>
-
-                  <!-- Next Step Button -->
-                  <button class="btn btn-outline-secondary ir-r d-block">
-                    ارسال مجدد
-                  </button>
-                </footer>
-              </div>
-
-              <!-- 3nd Step Content -->
-              <div class="step-content step-3">
-                <!-- New Password -->
-                <div
-                  class="form-group border border-secondary rounded p-2 mb-3"
-                >
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="newPassword"
-                    >رمز عبور جدید</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="text"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="newPassword"
-                    placeholder="رمز عبور جدید"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <!-- Confirm Password -->
-                <div
-                  class="form-group border border-secondary rounded p-2 mb-3"
-                >
-                  <!-- Lable -->
-                  <label
-                    class="d-block text-right ir-r c-label mb-0 fs-small"
-                    for="confirmNewPassword"
-                    >تایید رمز عبور جدید</label
-                  >
-
-                  <!-- Input -->
-                  <input
-                    type="text"
-                    class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                    id="confirmNewPassword"
-                    placeholder="تایید رمز عبور جدید"
-                  />
-
-                  <!-- Error Message -->
-                  <small
-                    id=""
-                    class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                    >پیام ارور</small
-                  >
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary ir-r d-block mb-3">
-                  ثبت
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </form>
+        </aside>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="pages-footer container-fluid sp-t sm-t bg-footer">
+    <footer class="pages-footer container-fluid sp-t bg-footer">
       <div class="row px-3 px-md-5">
         <!-- Our Company -->
         <aside class="col-md-3 mb-5 mb-md-0">
@@ -524,5 +361,16 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+      $(".next-btn").on("click", function () {
+        $(".step.step-1, .step-content.step-1").removeClass("active");
+        $(".step.step-2, .step-content.step-2").addClass("active");
+      });
+
+      $(".prev-btn").on("click", function () {
+        $(".step.step-1, .step-content.step-1").addClass("active");
+        $(".step.step-2, .step-content.step-2").removeClass("active");
+      });
+    </script>
   </body>
 </html>
