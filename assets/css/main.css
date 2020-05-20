@@ -206,6 +206,18 @@
   background: url(../img/bc-rice.png) no-repeat left center;
 }
 
+.cart .q-btn {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background: #333;
+}
+.cart .q-input {
+  width: 50px;
+}
+
 .contact-us .connection-way .icon,
 .ticketing .connection-way .icon {
   width: 50px;
