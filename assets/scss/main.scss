@@ -25,7 +25,7 @@
 // Blog
 @import "blog";
 
-// Cart
+// Cart and Checkout
 @import "cart";
 
 // Contact us and Ticketing
@@ -343,5 +343,18 @@ input[type="checkbox"] {
     &::before {
       content: "";
     }
+  }
+}
+
+.custom-control-label {
+  padding-right: 25px;
+  &::after {
+    right: 0;
+    left: auto !important;
+  }
+
+  &::before {
+    right: 0;
+    left: auto !important;
   }
 }

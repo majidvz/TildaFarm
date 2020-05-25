@@ -218,6 +218,24 @@
   width: 50px;
 }
 
+.checkout .address-forms {
+  transition: 0.3s;
+  margin-top: 0;
+  height: 0;
+  overflow-y: hidden;
+}
+.checkout .address-forms.active {
+  margin-top: 1rem;
+  height: auto;
+  overflow-y: inherit;
+}
+.checkout .discount input {
+  border-radius: 0 5px 5px 0;
+}
+.checkout .discount button {
+  border-radius: 5px 0 0 5px;
+}
+
 .contact-us .connection-way .icon,
 .ticketing .connection-way .icon {
   width: 50px;
@@ -561,6 +579,18 @@ input[type=checkbox]:not(:checked) + .check-box-label > i {
 }
 input[type=checkbox]:not(:checked) + .check-box-label > i::before {
   content: "";
+}
+
+.custom-control-label {
+  padding-right: 25px;
+}
+.custom-control-label::after {
+  right: 0;
+  left: auto !important;
+}
+.custom-control-label::before {
+  right: 0;
+  left: auto !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -15,3 +15,29 @@
     width: 50px;
   }
 }
+
+// Checkout
+.checkout {
+  // Add Address Forms
+  .address-forms {
+    transition: 0.3s;
+    margin-top: 0;
+    height: 0;
+    overflow-y: hidden;
+    &.active {
+      margin-top: 1rem;
+      height: auto;
+      overflow-y: inherit;
+    }
+  }
+
+  // Discount
+  .discount {
+    input {
+      border-radius: 0 5px 5px 0;
+    }
+    button {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+}

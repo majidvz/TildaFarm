@@ -124,13 +124,266 @@
 
     <section class="container sm-t sp-t">
       <div class="row">
-        <aside class="col-md-9 mb-3 mb-md-0">
+        <aside class="col-lg-8 mb-3 mb-md-0">
           <div class="card border-0 p-3">
-              
+            <!-- Choice Address -->
+            <div class="choice-address">
+              <!-- Title -->
+              <span class="ir-b text-right d-block c-dark mb-3"
+                >انتخاب آدرس</span
+              >
+
+              <!-- First Address -->
+              <div class="custom-control custom-radio text-right mb-3">
+                <input
+                  type="radio"
+                  id="firstAddress"
+                  name="customRadio"
+                  class="custom-control-input"
+                />
+                <label
+                  class="custom-control-label ir-r fs-regular c-regular"
+                  for="firstAddress"
+                >
+                  رشت، گلسار، ابتدای بلوار توحید، رستوران شورکولی.
+                </label>
+              </div>
+
+              <!-- Second Address -->
+              <div class="custom-control custom-radio text-right mb-3">
+                <input
+                  type="radio"
+                  id="secondAddress"
+                  name="customRadio"
+                  class="custom-control-input"
+                />
+
+                <label
+                  class="custom-control-label ir-r fs-regular c-regular"
+                  for="secondAddress"
+                  >رشت، گلسار، نبش خیابان۱۲۳، رستوران رازقی.</label
+                >
+              </div>
+
+              <!-- Add Address -->
+              <div class="add-address">
+                <!-- Button -->
+                <span
+                  class="btn btn-warning add-address-btn ir-r d-block fs-regular cursor-pointer mb-0"
+                  >افزودن آدرس</span
+                >
+
+                <!-- Forms -->
+                <div class="address-forms">
+                  <form action="">
+                    <div class="row bg-light p-3">
+                      <!-- Full Name -->
+                      <div class="col-md-6">
+                        <div
+                          class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+                        >
+                          <!-- Lable -->
+                          <label
+                            class="d-block text-right ir-r c-label mb-0 fs-small"
+                            for="fullName"
+                            >نام و نام خانوادگی
+                            <span class="text-danger ir-r">*</span></label
+                          >
+
+                          <!-- Input -->
+                          <input
+                            required
+                            type="text"
+                            class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                            id="fullName"
+                            placeholder="نام و نام خانوادگی"
+                          />
+
+                          <!-- Error Message -->
+                          <small
+                            id=""
+                            class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                            >پیام ارور</small
+                          >
+                        </div>
+                      </div>
+
+                      <!-- Phone Number -->
+                      <div class="col-md-6">
+                        <div
+                          class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+                        >
+                          <!-- Lable -->
+                          <label
+                            class="d-block text-right ir-r c-label mb-0 fs-small"
+                            for="phoneNumber"
+                            >شماره تماس
+                            <span class="text-danger ir-r">*</span></label
+                          >
+
+                          <!-- Input -->
+                          <input
+                            required
+                            type="tel"
+                            class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                            id="phoneNumber"
+                            placeholder="شماره تماس"
+                          />
+
+                          <!-- Error Message -->
+                          <small
+                            id=""
+                            class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                            >پیام ارور</small
+                          >
+                        </div>
+                      </div>
+
+                      <!-- Province -->
+                      <div class="col-md-6">
+                        <div
+                          class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+                        >
+                          <!-- Lable -->
+                          <label
+                            class="d-block text-right ir-r c-label mb-0 fs-small"
+                            for="province"
+                            >استان
+                            <span class="text-danger ir-r">*</span></label
+                          >
+                          <input
+                            placeholder="انتخاب استان"
+                            class="form-control ir-r d-block w-100 rounded-0 shadow-none px-0 border-0"
+                            list="provinces"
+                            name="province"
+                            id="province"
+                          />
+
+                          <datalist id="provinces">
+                            <option value="گیلان"></option>
+                            <option value="مازندران"></option>
+                            <option value="تهران"></option>
+                            <option value="فارس"></option>
+                          </datalist>
+
+                          <!-- Error Message -->
+                          <small
+                            id=""
+                            class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                            >پیام ارور</small
+                          >
+                        </div>
+                      </div>
+
+                      <!-- City -->
+                      <div class="col-md-6">
+                        <div
+                          class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+                        >
+                          <!-- Lable -->
+                          <label
+                            class="d-block text-right ir-r c-label mb-0 fs-small"
+                            for="city"
+                            >شهر <span class="text-danger ir-r">*</span></label
+                          >
+                          <input
+                            placeholder="انتخاب شهر"
+                            class="form-control ir-r d-block w-100 rounded-0 shadow-none px-0 border-0"
+                            list="cities"
+                            name="city"
+                            id="city"
+                          />
+
+                          <datalist id="cities">
+                            <option value="رشت"></option>
+                            <option value="بندر انزلی"></option>
+                            <option value="رودبار"></option>
+                            <option value="لاهیجان"></option>
+                          </datalist>
+
+                          <!-- Error Message -->
+                          <small
+                            id=""
+                            class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                            >پیام ارور</small
+                          >
+                        </div>
+                      </div>
+
+                      <!-- Address Details -->
+                      <div class="col-12">
+                        <div
+                          class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+                        >
+                          <!-- Lable -->
+                          <label
+                            class="d-block text-right ir-r c-label mb-0 fs-small"
+                            for="city"
+                            >جزئیات آدرس
+                            <span class="text-danger ir-r">*</span></label
+                          >
+
+                          <textarea
+                            class="ir-r form-control px-0 shadow-none border-0"
+                            placeholder="بلوار، خیابان، کوچه، بن بست و..."
+                            name=""
+                            id=""
+                            rows="3"
+                          ></textarea>
+
+                          <!-- Error Message -->
+                          <small
+                            id=""
+                            class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                            >پیام ارور</small
+                          >
+                        </div>
+                      </div>
+
+                      <!-- ZIP Code -->
+                      <div class="col-md-6 offset-md-6">
+                        <div
+                          class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+                        >
+                          <!-- Lable -->
+                          <label
+                            class="d-block text-right ir-r c-label mb-0 fs-small"
+                            for="zipCode"
+                            >کدپستی
+                            <span class="text-danger ir-r">*</span></label
+                          >
+                          <input
+                            type="text"
+                            placeholder="انتخاب شهر"
+                            class="form-control ir-r d-block w-100 rounded-0 shadow-none px-0 border-0"
+                            id="zipCode"
+                          />
+
+                          <!-- Error Message -->
+                          <small
+                            id=""
+                            class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                            >پیام ارور</small
+                          >
+                        </div>
+                      </div>
+
+                      <button
+                        class="btn btn-primary ir-r mr-3 px-5"
+                        type="button"
+                      >
+                        تایید
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </aside>
 
         <!-- Go to Checkout -->
-        <aside class="col-md-3">
+        <aside class="col-lg-4">
           <div class="card p-3 mb-3">
             <div class="d-flex justify-content-between align-items-center py-3">
               <span class="ir-r fs-small c-regular">قیمت کالا (ها)</span>
@@ -140,27 +393,43 @@
             <hr class="my-0 separator" />
 
             <div class="d-flex justify-content-between align-items-center py-3">
-              <span class="ir-r fs-small c-regular">جمع</span>
-              <span class="ir-r fs-small c-regular">500,000 تومان</span>
+              <span class="ir-r fs-small c-regular">هزینه ارسال</span>
+              <span class="ir-r fs-small c-regular">10,000 تومان</span>
+            </div>
+
+            <hr class="my-0 separator" />
+
+            <div class="discount clearfix">
+              <input
+                placeholder="کد تخفیف"
+                class="form-control d-block float-right ir-r text-right shadow-none w-75"
+                type="text"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary d-block float-right w-25 ir-r shadow-none"
+              >
+                اعمال
+              </button>
             </div>
 
             <hr class="my-0 separator" />
 
             <div class="d-flex justify-content-between align-items-center py-3">
               <span class="ir-b fs-small c-regular">مبلغ قابل پرداخت</span>
-              <span class="ir-b fs-small c-regular">500,000 تومان</span>
+              <span class="ir-b fs-small text-success">510,000 تومان</span>
             </div>
           </div>
 
           <a class="btn btn-success ir-r d-block w-100" href="./checkout.html"
-            >ادامه فرایند خرید</a
+            >پرداخت</a
           >
         </aside>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="pages-footer container-fluid sp-t bg-footer">
+    <footer class="pages-footer container-fluid sm-t sp-t bg-footer">
       <div class="row px-3 px-md-5">
         <!-- Our Company -->
         <aside class="col-md-3 mb-5 mb-md-0">
@@ -369,32 +638,14 @@
 
     <!-- Scripts -->
     <script src="../assets/js/jquery-3.5.0.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap-1.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
-      // Increase Button
-      $(".increase-btn").on("click", function () {
-        let input = $(this).siblings("input");
-        let value = input.val();
-        input.val(parseInt(value) + 1);
-      });
-
-      // Decrease Button
-      $(".decrease-btn").on("click", function () {
-        let input = $(this).siblings("input");
-        let value = input.val();
-        value <= 1 ? input.val(1) : input.val(parseInt(value) - 1);
-      });
-
-      $(".q-input").on("change", function () {
-        let value = $(this).val();
-        if (value <= 1) $(this).val(1);
-      });
-
-      $(".delete-order").on("click", function () {
-        $(this).parents(".ol-content").prev('hr.separator').remove();
-        $(this).parents(".ol-content").remove();
+      $(".add-address-btn").on("click", function () {
+        $(".address-forms").hasClass("active")
+          ? $(".address-forms").removeClass("active")
+          : $(".address-forms").addClass("active");
       });
     </script>
   </body>
