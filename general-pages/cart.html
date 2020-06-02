@@ -18,12 +18,32 @@
   <body class="bg-body cart">
     <!-- Header -->
     <header class="pages-header position-fixed w-100">
-      <nav class="navbar w-100 navbar-expand-lg navbar-light px-md-5 py-0">
-        <a class="navbar-brand" href="#">
-          <img src="../assets/img/logo.png" height="30" alt="مزرعه تیلدا" />
+      <!-- Top -->
+      <div
+        class="header-top py-2 d-flex flex-row justify-content-between d-lg-none"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+
+        <!-- Login Button -->
+        <button
+          type="button"
+          class="btn btn-primary border-0 hadow-none ir-r d-block float-left login-btn ml-3"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          ورود/ثبت نام
+        </button>
+      </div>
+
+      <nav class="navbar w-100 navbar-expand-lg navbar-light px-lg-5 px-3 py-0">
+        <a class="navbar-brand d-none mr-0 d-lg-block" href="./index.html">
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 pr-0"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -43,7 +63,7 @@
             <li class="nav-item dropdown pr-0 pr-md-4">
               <a
                 class="nav-link toggle ir-r"
-                href="#"
+                href="./products.html"
                 id="navbarDropdown"
                 role="button"
                 data-toggle="dropdown"
@@ -53,10 +73,14 @@
                 محصولات
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item ir-r text-right text-white" href="#"
+                <a
+                  class="dropdown-item ir-r text-right fs-regular c-regular"
+                  href="./products.html"
                   >برنج طارم</a
                 >
-                <a class="dropdown-item ir-r text-right text-white" href="#"
+                <a
+                  class="dropdown-item ir-r text-right fs-regular c-regular"
+                  href="./products.html"
                   >برنج هاشمی</a
                 >
               </div>
@@ -76,7 +100,7 @@
           <!-- Login Button -->
           <button
             type="button"
-            class="btn btn-primary ir-r d-block float-left login-btn mr-3"
+            class="btn btn-primary ir-r d-none d-lg-block float-left login-btn mr-3"
             data-toggle="modal"
             data-target="#loginModal"
           >
@@ -494,7 +518,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="pages-footer container-fluid sp-t bg-footer">
+    <footer class="pages-footer container-fluid sp-t sm-t bg-footer">
       <div class="row px-3 px-md-5">
         <!-- Our Company -->
         <aside class="col-md-3 mb-5 mb-md-0">
@@ -702,7 +726,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../assets/js/jquery-3.5.0.min.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/main.js"></script>

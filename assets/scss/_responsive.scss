@@ -1,3 +1,48 @@
+@media only screen and (max-width: 991.99px) {
+  // Pages Header
+  .pages-header {
+    height: 118px;
+    &.active {
+      background: #fff;
+      top: 0;
+    }
+
+    &:not(.intro-header) {
+      background: #fff;
+    }
+    & + section {
+      margin-top: 150px;
+    }
+
+    .navbar-collapse {
+      transition: 0.3s;
+      position: fixed;
+      top: 0;
+      width: 50vw;
+      background: #fff;
+      height: 100vh !important;
+      box-shadow: -10px 5px 30px #00000015;
+      padding: 20px;
+      text-align: right;
+      z-index: 650;
+      &:not(.collapse) {
+        right: -55vw;
+      }
+      &.collapse {
+        right: 0;
+      }
+    }
+
+    &.intro-header {
+      .navbar-collapse {
+        .nav-link {
+          color: #666 !important;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767.99px) {
   // Register
   .register {

@@ -24,8 +24,8 @@ $(".pages-header .search-box .close-btn").on("click", function () {
 // Fixed Pages Header While Page Scrolled
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
-  if (scroll >= 60) $(".pages-header>nav").addClass("active");
-  else $(".pages-header>nav").removeClass("active");
+  if (scroll >= 120) $(".pages-header").addClass("active");
+  else $(".pages-header").removeClass("active");
 });
 
 // Product Add to Favorites Button
@@ -44,4 +44,8 @@ $(".products .filter-btn").on("click", function () {
 
 $(".products .close-btn").on("click", function () {
   $(".products .filters").removeClass("open");
+});
+
+$(document).on("click", function () {
+  if ($(".navbar-collapse").hasClass("show")) $(".navbar-toggler").click();
 });

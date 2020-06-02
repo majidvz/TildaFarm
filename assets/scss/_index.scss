@@ -19,10 +19,11 @@
         .nav-link {
           color: #ffffff;
         }
-        &.active {
-          .nav-link {
-            color: #666;
-          }
+      }
+
+      &.active {
+        .nav-link {
+          color: #666 !important;
         }
       }
     }

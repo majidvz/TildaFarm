@@ -358,3 +358,18 @@ input[type="checkbox"] {
     left: auto !important;
   }
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -500;
+  transition: 0.1s;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  &.active {
+    z-index: 600;
+    background: #00000020;
+  }
+}

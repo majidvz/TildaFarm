@@ -1,20 +1,17 @@
 @charset "UTF-8";
 .pages-header {
   z-index: 500;
+  backdrop-filter: blur(10px);
+}
+.pages-header .navbar-toggler:focus {
+  outline: none !important;
+  border: none !important;
 }
 .pages-header .navbar {
   transition: 0.3s;
-  backdrop-filter: blur(10px);
 }
 .pages-header .navbar .nav-link {
   color: #666;
-}
-.pages-header .navbar.active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: white;
-  box-shadow: 5px 5px 15px #00000015;
 }
 .pages-header .dropdown-menu {
   left: auto;
@@ -53,6 +50,13 @@
 .pages-header .search-box.active {
   top: 0;
 }
+.pages-header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 5px 5px 15px #00000015;
+}
 
 .login-modal .modal-title {
   font-size: 2em;
@@ -79,8 +83,8 @@
 .index .intro .pages-header .navbar .nav-link {
   color: #ffffff;
 }
-.index .intro .pages-header .navbar.active .nav-link {
-  color: #666;
+.index .intro .pages-header.active .nav-link {
+  color: #666 !important;
 }
 .index .intro .intro-carousel {
   bottom: 0;
@@ -250,6 +254,42 @@
   line-height: 1.5em;
 }
 
+@media only screen and (max-width: 991.99px) {
+  .pages-header {
+    height: 118px;
+  }
+  .pages-header.active {
+    background: #fff;
+    top: 0;
+  }
+  .pages-header:not(.intro-header) {
+    background: #fff;
+  }
+  .pages-header + section {
+    margin-top: 150px;
+  }
+  .pages-header .navbar-collapse {
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    background: #fff;
+    height: 100vh !important;
+    box-shadow: -10px 5px 30px #00000015;
+    padding: 20px;
+    text-align: right;
+    z-index: 650;
+  }
+  .pages-header .navbar-collapse:not(.collapse) {
+    right: -55vw;
+  }
+  .pages-header .navbar-collapse.collapse {
+    right: 0;
+  }
+  .pages-header.intro-header .navbar-collapse .nav-link {
+    color: #666 !important;
+  }
+}
 @media only screen and (max-width: 767.99px) {
   .register .register-header {
     width: 80%;
@@ -293,6 +333,10 @@
   }
 }
 @media only screen and (min-width: 767.99px) {
+  .pages-header .navbar.active {
+    top: 0;
+  }
+
   .register .register-header {
     width: 40%;
   }
@@ -591,6 +635,21 @@ input[type=checkbox]:not(:checked) + .check-box-label > i::before {
 .custom-control-label::before {
   right: 0;
   left: auto !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -500;
+  transition: 0.1s;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+}
+.overlay.active {
+  z-index: 600;
+  background: #00000020;
 }
 
 /*# sourceMappingURL=main.css.map */
