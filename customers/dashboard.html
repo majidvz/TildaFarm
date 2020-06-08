@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html class="dashboard" lang="fa">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>مزرعه تیلدا | داشبورد</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/fontIcons/dashboard/style.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body class="bg-body">
+    <!-- Header -->
+    <header class="pages-header position-fixed w-100">
+      <!-- Top -->
+      <div
+        class="header-top py-2 d-flex flex-row justify-content-between d-lg-none"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" href="../general-pages/index.html">
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+
+        <!-- User -->
+      </div>
+
+      <nav class="navbar w-100 navbar-expand-lg navbar-light px-lg-5 px-3 py-0">
+        <a
+          class="navbar-brand d-none mr-0 d-lg-block"
+          href="../general-pages/index.html"
+        >
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+        <button
+          class="navbar-toggler border-0 pr-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/index.html"
+                >خانه</a
+              >
+            </li>
+
+            <li class="nav-item my-0 dropdown pr-0 pr-md-4">
+              <a
+                class="nav-link toggle ir-r fs-small"
+                href="../general-pages/products.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                محصولات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج طارم</a
+                >
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج هاشمی</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/blog.html"
+                >وبلاگ</a
+              >
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/contact-us.html"
+                >تماس با ما</a
+              >
+            </li>
+
+            <div class="dropdown-divider"></div>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./dashboard.html"
+                class="active text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-home icon home"></i>
+                داشبورد
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a href="#" class="text-decoration-none c-regular fs-small ir-r">
+                <i class="di-list orders icon"></i>
+                لیست سفارشها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a href="#" class="text-decoration-none c-regular fs-small ir-r">
+                <i class="di-heart icon favorites"></i>
+                لیست علاقه مندی‌ها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a href="#" class="text-decoration-none c-regular fs-small ir-r">
+                <i class="di-map-pin icon addresses"></i>
+                آدرسها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a href="#" class="text-decoration-none c-regular fs-small ir-r">
+                <i class="di-user icon information"></i>
+                ویرایش اطلاعات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a href="#" class="text-decoration-none c-regular fs-small ir-r">
+                <i class="di-key icon password"></i>
+                ویرایش رمز عبور
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="../general-pages/Ticketing.html"
+                class="text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-headphones icon support"></i>
+                تماس با پشتیبانی
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <button
+                type="button"
+                class="d-flex btn logout-btn pr-0 shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-log-out icon logout"></i>
+                خروج
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <!-- Cart -->
+          <a
+            class="d-block float-left nav-link p-0 text-decoration-none mr-3 cart-btn position-relative"
+            href="../general-pages/cart.html"
+          >
+            <!-- Cart's Icon -->
+            <i class="di-cart nav-link p-0 icon d-block float-left"></i>
+
+            <!-- Order Counter -->
+            <span
+              class="counter ir-r text-white rounded-circle position-absolute text-center"
+              >1</span
+            >
+          </a>
+
+          <!-- Search Button -->
+          <i
+            class="search-btn float-left d-block di-search nav-link p-0 icon cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+
+      <div class="search-box position-fixed w-100 px-md-5 bg-white">
+        <form class="d-block w-100 h-100" action="">
+          <input
+            type="search"
+            class="ir-r text-right form-control shadow-none rounded-0 border-0 d-block float-right h-100 p-0 search-input"
+            placeholder="دنبال چه چیزی می‌گردید؟ برنج، نام فروشنده، کشت اول و..."
+            name=""
+            id=""
+          />
+
+          <i
+            class="di-clear cursor-pointer close-btn d-block float-right text-center"
+          ></i>
+        </form>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="dash-main">
+      <!-- Navigator -->
+      <div class="dash-nav">
+        <div class="holder">
+          <a
+            href="#"
+            class="active text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-home icon home"></i>
+            داشبورد
+          </a>
+
+          <a
+            href="#"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-list orders icon"></i>
+            لیست سفارشها
+          </a>
+
+          <a
+            href="#"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-heart icon favorites"></i>
+            لیست علاقه مندی‌ها
+          </a>
+
+          <a
+            href="#"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-map-pin icon addresses"></i>
+            آدرسها
+          </a>
+
+          <a
+            href="#"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-user icon information"></i>
+            ویرایش اطلاعات
+          </a>
+
+          <a
+            href="#"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-key icon password"></i>
+            ویرایش رمز عبور
+          </a>
+
+          <a
+            href="../general-pages/Ticketing.html"
+            class="text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-headphones icon support"></i>
+            تماس با پشتیبانی
+          </a>
+
+          <button
+            type="button"
+            class="d-flex btn logout-btn shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-log-out icon logout"></i>
+            خروج
+          </button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <section class="dash-content">
+        <!-- Latest Order -->
+        <div class="row">
+          <!-- Order List -->
+          <aside class="col-lg-12">
+            <!-- Title -->
+            <h3 class="d-block text-right c-dark mb-3 k-bl fs-big">
+              آخرین سفارش
+            </h3>
+
+            <div class="card border-0 p-3">
+              <!-- Header -->
+              <div class="row ol-header d-none d-md-flex align-items-center py-3">
+                <aside class="col-10 col-md-4 text-center ir-b c-regular">
+                  محصول
+                </aside>
+
+                <aside class="col-6 col-md-2 text-center ir-b c-regular">
+                  مقدار
+                </aside>
+
+                <aside class="col-6 col-md-2 text-center ir-b c-regular">
+                  تعداد
+                </aside>
+
+                <aside class="col-md-2 text-center ir-b c-regular">
+                  قیمت (تومان)
+                </aside>
+
+                <aside class="col-md-2 text-center ir-b c-regular">وضعیت</aside>
+              </div>
+              
+              <hr class="my-0 d-none d-md-block" />
+  
+              <div class="row ol-content py-3 d-flex align-items-center">
+                <!-- Responsive Mode -->
+                <div class="col-4 d-block d-md-none">
+                  <a
+                    class="text-decoration-none ir-r fs-small c-regular"
+                    href="./product-detail.html"
+                  >
+                    <img
+                      class="d-block w-100 border border-secondary rounded-sm"
+                      src="../assets/img/product-1-tb.png"
+                      alt="عنوان محصول"
+                    />
+                  </a>
+                </div>
+
+                <div class="col-8 d-block d-md-none">
+                  <a
+                    class="text-decoration-none ir-b fs-regular text-right mb-3 c-regular d-block d-md-none"
+                    href="./product-detail.html"
+                  >
+                    برنج دم سیاه درجه یک آقاجانیان
+                  </a>
+  
+                  <!-- Amount -->
+                  <div class="ir-r text-right fs-regular mb-3 c-regular">
+                    مقدار: 10 کیلوگرم
+                  </div>
+  
+                  <!-- Quantity -->
+                  <div class="ir-r text-right fs-regular mb-3 c-regular">
+                    تعداد: 3 کیسه
+                  </div>
+  
+                  <!-- Price -->
+                  <div class="ir-r text-right fs-regular mb-3 c-regular">
+                    قیمت: 150,000 تومان
+                  </div>
+
+                  <!-- Status -->
+                  <div class="status text-right">
+                    وضعیت:
+                    <span class="alert alert-primary p-1 ir-r fs-small text-center" role="alert">
+                      در حال ارسال
+                    </span>
+                  </div>
+                </div>
+  
+                <!-- Desktop Mode -->
+                <aside
+                  class="col-10 col-md-4 text-center c-regular d-none d-md-block"
+                >
+                  <a
+                    class="text-decoration-none ir-r fs-small c-regular"
+                    href="./product-detail.html"
+                  >
+                    <div class="row">
+                      <div class="col-3">
+                        <img
+                          class="d-block w-100 border border-secondary rounded-sm"
+                          src="../assets/img/product-1-tb.png"
+                          alt="عنوان محصول"
+                        />
+                      </div>
+                      <div class="col-9 align-self-center text-right">
+                        برنج دم سیاه درجه یک آقاجانیان
+                      </div>
+                    </div>
+                  </a>
+                </aside>
+  
+                <aside
+                  class="col-6 col-md-2 text-center ir-r c-regular align-items-center justify-content-center d-none d-md-flex"
+                >10 کیلوگرم
+                </aside>
+  
+                <aside
+                  class="col-md-2 ir-r text-center c-regular align-items-center justify-content-center d-none d-md-flex"
+                >
+                3 کیسه
+                </aside>
+  
+                <aside
+                  class="col-6 col-md-2 text-center c-regular d-none d-md-block c-regular ir-r"
+                >
+                  180,000
+                </aside>
+  
+                <aside
+                  class="col-md-2 d-none d-md-flex flex-row justify-content-center align-items-center"
+                >
+                <div class="alert alert-primary ir-r fs-small mb-0 p-2 text-center" role="alert">
+                  در حال ارسال
+                </div>
+                </aside>
+              </div>
+          </aside>
+        </div>
+
+        <!-- User Information -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <header class="d-flex flex-row mb-3 justify-content-between align-items-center mb-3">
+              <!-- Title -->
+            <h3 class="d-block text-right mb-0 c-dark k-bl fs-big">
+              اطلاعات شخصی
+            </h3>
+
+            <a href="#" class="text-decoration-none ir-r fs-regular c-regular">
+              ویرایش
+            </a>
+            </header>
+
+            <div class="card p-3 border-0">
+              <div class="row">
+                <aside class="col-md-6 c-regular mb-3 border-bottom border-left">
+                  <span class="ir-r text-right d-block c-regular fs-small">نام و نام خانوادگی</span>
+                  <span class="ir-r text-right d-block c-regular fs-big">مجید ولی زاده</span>
+                </aside>
+                
+                <aside class="col-md-6 c-regular mb-3 border-bottom">
+                  <span class="ir-r text-right d-block c-regular fs-small">شماره موبایل</span>
+                  <span class="ir-r text-right d-block c-regular fs-big">0911 674 2083</span>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

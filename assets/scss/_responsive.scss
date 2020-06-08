@@ -15,10 +15,11 @@
     }
 
     .navbar-collapse {
+      overflow-y: auto;
       transition: 0.3s;
       position: fixed;
       top: 0;
-      width: 50vw;
+      width: 70vw;
       background: #fff;
       height: 100vh !important;
       box-shadow: -10px 5px 30px #00000015;
@@ -41,6 +42,26 @@
       }
     }
   }
+
+  // Dashboard
+  .dashboard {
+    .nav-item {
+      margin: 8px 0;
+    }
+    .dash-main {
+      margin-top: 150px;
+
+      // Navigator
+      .dash-nav {
+        display: none;
+      }
+
+      // Content
+      .dash-content {
+        padding: 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767.99px) {
@@ -53,22 +74,27 @@
 
   // Products
   .products {
+    margin-top: 50px !important;
     // Filters
     .filters {
-      padding: 50px 20px 20px 20px;
+      padding: 50px 20px 80px 20px;
       background: #ffffff;
-      position: absolute;
-      top: -100px;
+      position: fixed;
+      top: 0;
       right: -100vw;
       transition: 0.3s;
       z-index: 550;
       width: 100vw;
-      height: 100vh;
+      height: calc(100vh - 59px);
 
       // Categories
       .categories {
         height: calc(100vh - 110px);
         overflow-y: auto;
+
+        & > .form-check:last-child {
+          margin-bottom: 80px;
+        }
       }
 
       // Close Button
@@ -103,6 +129,16 @@
     // Filter Button
     .filter-btn {
       border-radius: 5px;
+    }
+  }
+
+  // Index
+  .index {
+    // Introduction
+    .intro {
+      .slide-text {
+        font-size: 3em !important;
+      }
     }
   }
 }

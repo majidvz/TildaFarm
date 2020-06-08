@@ -60,7 +60,6 @@
 
         // Texts
         .slide-text {
-          font-size: 4em;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -76,6 +75,27 @@
         // Second Slide
         &.slide-2 {
           background: url(../img/index-slide-2.png) no-repeat center;
+        }
+      }
+    }
+
+    .intro-category {
+      z-index: 250;
+      width: 500px;
+      height: 100px;
+      transform: translateY(-60px);
+
+      .ic-item {
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background-size: cover;
+        text-shadow: 0 2px 5px #00000050;
+        box-shadow: 5px 5px 15px #00000015;
+
+        &.tarom {
+          background: url(../img/tarom.jpg);
         }
       }
     }

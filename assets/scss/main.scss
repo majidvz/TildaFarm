@@ -31,6 +31,9 @@
 // Contact us and Ticketing
 @import "contactUs";
 
+// Dashboards (Customers and Sellers)
+@import "dashboard";
+
 // Responsive Mode
 @import "responsive";
 
@@ -212,7 +215,7 @@ a:focus {
 // Background Classes
 .bg- {
   &body {
-    background: $bg-body;
+    background: $bg-body !important;
   }
 
   &footer {

@@ -6,6 +6,16 @@
     }
   }
 
+  // Index
+  .index {
+    // Introduction
+    .intro {
+      .slide-text {
+        font-size: 4em;
+      }
+    }
+  }
+
   // Register
   .register {
     .register-header {
@@ -67,6 +77,57 @@
       // Farmer's Product
       .farmer-products {
         transform: translateY(-50px);
+      }
+    }
+  }
+
+  // Dashboard
+  .dashboard {
+    .dash-main {
+      height: 100vh;
+      margin-top: 59px;
+      height: calc(100vh - 59px);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .navigator,
+      .dash-content {
+        float: right;
+      }
+
+      // Navigator
+      .dash-nav {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #eee;
+        width: 180px;
+        height: 100%;
+
+        .nav-item {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+
+          &:hover,
+          &.active {
+            padding-right: 10px !important;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      // Content
+      .dash-content {
+        padding: 50px;
+        overflow-y: auto;
+        width: calc(100% - 180px);
+        height: 100%;
       }
     }
   }

@@ -1,0 +1,121 @@
+// Dashboard
+.dashboard {
+  height: 100%;
+
+  // Body
+  & > body {
+    height: 100%;
+  }
+
+  // Page Header
+  .pages-header {
+    border-bottom: 1px solid #eee;
+  }
+
+  // Main
+  .dash-main {
+    // Navigator
+    .dash-nav {
+      padding: 0 10px;
+
+      .nav-item {
+        transition: 0.3s;
+        & > .icon {
+          margin-left: 8px;
+          &.favorites {
+            color: #f44336;
+          }
+
+          &.orders {
+            color: #03a9f4;
+          }
+
+          &.home {
+            color: #4caf50;
+          }
+
+          &.information {
+            color: #009688;
+          }
+
+          &.password {
+            color: #8bc34a;
+          }
+
+          &.addresses {
+            color: #673ab7;
+          }
+
+          &.logout {
+            color: #ff5722;
+          }
+
+          &.support {
+            color: #3f51b5;
+          }
+        }
+
+        &.logout-btn {
+          padding: 0;
+        }
+      }
+    }
+
+    // Content
+    .dash-content {
+      background: $bg-body;
+    }
+  }
+
+  .nav-item {
+    transition: 0.3s;
+    & > .icon {
+      margin-left: 8px;
+    }
+
+    &.logout-btn {
+      padding: 0;
+    }
+  }
+
+  // Icons Colors
+  .icon {
+    &.favorites {
+      color: #f44336;
+    }
+
+    &.orders {
+      color: #03a9f4;
+    }
+
+    &.home {
+      color: #4caf50;
+    }
+
+    &.information {
+      color: #009688;
+    }
+
+    &.password {
+      color: #8bc34a;
+    }
+
+    &.addresses {
+      color: #673ab7;
+    }
+
+    &.logout {
+      color: #ff5722;
+    }
+
+    &.support {
+      color: #3f51b5;
+    }
+  }
+}
+
+.di-list {
+  -webkit-transform: rotate(180deg) !important;
+  -ms-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
+}
