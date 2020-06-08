@@ -352,6 +352,15 @@
 .dashboard .icon.support {
   color: #3f51b5;
 }
+.dashboard .address-item {
+  border-radius: 5px;
+  border: 1px solid #9fa8da;
+}
+.dashboard .address-item .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .di-list {
   -webkit-transform: rotate(180deg) !important;
@@ -368,7 +377,7 @@
   border-radius: 5px;
   height: 200px;
   line-height: 200px;
-  background: url(../img/error-404.jpg) no-repeat center;
+  background: url(../img/error-404.jpg) no-repeat bottom right;
   background-size: cover;
   font-size: 4em;
   text-shadow: 0 3px 5px #00000050;
@@ -424,6 +433,9 @@
   }
   .dashboard .dash-main .dash-content {
     padding: 20px;
+  }
+  .dashboard .address-item .options {
+    align-items: start;
   }
 }
 @media only screen and (max-width: 767.99px) {
@@ -565,6 +577,9 @@
   }
   .dashboard .home .user-information .ui-item:nth-child(2n-1) {
     border-left: 1px solid #eee;
+  }
+  .dashboard .address-item .options {
+    align-items: center;
   }
 }
 @font-face {

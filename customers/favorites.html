@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html class="dashboard" lang="fa">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>مزرعه تیلدا | لیست علاقه مندی‌ها</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/fontIcons/dashboard/style.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body class="bg-body">
+    <!-- Header -->
+    <header class="pages-header position-fixed w-100">
+      <!-- Top -->
+      <div
+        class="header-top py-2 d-flex flex-row justify-content-between d-lg-none"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" href="../general-pages/index.html">
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+
+        <!-- User -->
+      </div>
+
+      <nav class="navbar w-100 navbar-expand-lg navbar-light px-lg-5 px-3 py-0">
+        <a
+          class="navbar-brand d-none mr-0 d-lg-block"
+          href="../general-pages/index.html"
+        >
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+        <button
+          class="navbar-toggler border-0 pr-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/index.html"
+                >خانه</a
+              >
+            </li>
+
+            <li class="nav-item my-0 dropdown pr-0 pr-md-4">
+              <a
+                class="nav-link toggle ir-r fs-small"
+                href="../general-pages/products.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                محصولات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج طارم</a
+                >
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج هاشمی</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/blog.html"
+                >وبلاگ</a
+              >
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/contact-us.html"
+                >تماس با ما</a
+              >
+            </li>
+
+            <div class="dropdown-divider"></div>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./dashboard.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-home icon home"></i>
+                داشبورد
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="orders-list.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-list orders icon"></i>
+                لیست سفارشات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./favorites.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-heart icon favorites"></i>
+                لیست علاقه مندی‌ها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./addresses.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-map-pin icon addresses"></i>
+                آدرس ها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./edit-information.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-user icon information"></i>
+                ویرایش اطلاعات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./edit-password.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-key icon password"></i>
+                ویرایش رمز عبور
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="../general-pages/Ticketing.html"
+                class="text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-headphones icon support"></i>
+                تماس با پشتیبانی
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <button
+                type="button"
+                class="d-flex btn logout-btn pr-0 shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-log-out icon logout"></i>
+                خروج
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <!-- Cart -->
+          <a
+            class="d-block float-left nav-link p-0 text-decoration-none mr-3 cart-btn position-relative"
+            href="../general-pages/cart.html"
+          >
+            <!-- Cart's Icon -->
+            <i class="di-cart nav-link p-0 icon d-block float-left"></i>
+
+            <!-- Order Counter -->
+            <span
+              class="counter ir-r text-white rounded-circle position-absolute text-center"
+              >1</span
+            >
+          </a>
+
+          <!-- Search Button -->
+          <i
+            class="search-btn float-left d-block di-search nav-link p-0 icon cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+
+      <div class="search-box position-fixed w-100 px-md-5 bg-white">
+        <form class="d-block w-100 h-100" action="">
+          <input
+            type="search"
+            class="ir-r text-right form-control shadow-none rounded-0 border-0 d-block float-right h-100 p-0 search-input"
+            placeholder="دنبال چه چیزی می‌گردید؟ برنج، نام فروشنده، کشت اول و..."
+            name=""
+            id=""
+          />
+
+          <i
+            class="di-clear cursor-pointer close-btn d-block float-right text-center"
+          ></i>
+        </form>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="dash-main">
+      <!-- Navigator -->
+      <div class="dash-nav">
+        <div class="holder">
+          <a
+            href="./dashboard.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-home icon home"></i>
+            داشبورد
+          </a>
+
+          <a
+            href="./orders-list.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-list orders icon"></i>
+            لیست سفارشات
+          </a>
+
+          <a
+            href="./favorites.html"
+            class="active text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-heart icon favorites"></i>
+            لیست علاقه مندی‌ها
+          </a>
+
+          <a
+            href="./addresses.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-map-pin icon addresses"></i>
+            آدرس ها
+          </a>
+
+          <a
+            href="./edit-information.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-user icon information"></i>
+            ویرایش اطلاعات
+          </a>
+
+          <a
+            href="./edit-password.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-key icon password"></i>
+            ویرایش رمز عبور
+          </a>
+
+          <a
+            href="../general-pages/Ticketing.html"
+            class="text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-headphones icon support"></i>
+            تماس با پشتیبانی
+          </a>
+
+          <button
+            type="button"
+            class="d-flex btn logout-btn shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-log-out icon logout"></i>
+            خروج
+          </button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <section class="dash-content">
+        <div class="row">
+          <div class="col-lg-12">
+            <header
+              class="d-flex flex-row justify-content-between align-items-center mb-3"
+            >
+              <!-- Title -->
+              <h3 class="d-block text-right mb-0 c-dark k-bl fs-big">
+                لیست علاقه مندی‌ها
+              </h3>
+            </header>
+
+            <div class="row">
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 col-lg-3 mb-3">
+                <div class="card border-0 overflow-hidden product-card">
+                  <!-- Header -->
+                  <div
+                    class="card-header bg-transparent border-0 p-0 position-relative"
+                  >
+                    <!-- Product Image -->
+                    <img
+                      src="../assets/img/product-thumbnail.jpg"
+                      class="card-img-top"
+                      alt="برنج"
+                    />
+
+                    <!-- Add to Favorites -->
+                    <button
+                      class="add-favorites btn position-absolute shadow-none"
+                      type="button"
+                    >
+                      <i class="di-p-heart text-white"></i>
+                    </button>
+
+                    <!-- Product Seller -->
+                    <div
+                      class="product-seller px-2 d-flex flex-row align-items-end position-absolute"
+                    >
+                      <img
+                        class="d-block float-right rounded-sm seller-img"
+                        src="../assets/img/product-seller.png"
+                        alt="جابر محمدنیا"
+                      />
+                      <span
+                        class="d-block float-right seller-name text-right ir-b c-dark fs-small pr-2"
+                        >جابر محمدنیا</span
+                      >
+                    </div>
+
+                    <a
+                      href="./products.html"
+                      class="text-decoration-none ir-r text-white text-center fs-small position-absolute product-location"
+                      >رشت</a
+                    >
+                  </div>
+                  <div class="card-body px-2 pb-2">
+                    <a
+                      class="text-decoration-none"
+                      href="../general-pages/product-detail.html"
+                    >
+                      <!-- Title -->
+                      <h5 class="card-title ir-r c-dark fs-regular text-right">
+                        برنج شیرودی - کشت اول
+                      </h5>
+
+                      <!-- Price -->
+                      <div class="price clearfix w-100">
+                        <p
+                          class="currently-price d-block float-right ir-r ml-2 text-success"
+                        >
+                          150,000 تومان
+                        </p>
+                        <p
+                          class="last-price d-block float-right ir-r text-decoration-line text-danger"
+                        >
+                          200,000 تومان
+                        </p>
+                      </div>
+
+                      <!-- Stars -->
+                      <div class="stars d-flex flex-row justify-content-start">
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star-o"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-1 di-star"></i>
+                        <i class="c-star ml-0 di-star"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

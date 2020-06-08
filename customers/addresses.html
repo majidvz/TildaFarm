@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="dashboard" lang="fa">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>مزرعه تیلدا | آدرس ها</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/fontIcons/dashboard/style.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body class="bg-body">
+    <!-- Header -->
+    <header class="pages-header position-fixed w-100">
+      <!-- Top -->
+      <div
+        class="header-top py-2 d-flex flex-row justify-content-between d-lg-none"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" href="../general-pages/index.html">
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+
+        <!-- User -->
+      </div>
+
+      <nav class="navbar w-100 navbar-expand-lg navbar-light px-lg-5 px-3 py-0">
+        <a
+          class="navbar-brand d-none mr-0 d-lg-block"
+          href="../general-pages/index.html"
+        >
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+        <button
+          class="navbar-toggler border-0 pr-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/index.html"
+                >خانه</a
+              >
+            </li>
+
+            <li class="nav-item my-0 dropdown pr-0 pr-md-4">
+              <a
+                class="nav-link toggle ir-r fs-small"
+                href="../general-pages/products.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                محصولات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج طارم</a
+                >
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج هاشمی</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/blog.html"
+                >وبلاگ</a
+              >
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/contact-us.html"
+                >تماس با ما</a
+              >
+            </li>
+
+            <div class="dropdown-divider"></div>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./dashboard.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-home icon home"></i>
+                داشبورد
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./orders-list.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-list orders icon"></i>
+                لیست سفارشات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a href="./favorites.html" class="text-decoration-none c-regular fs-small ir-r">
+                <i class="di-heart icon favorites"></i>
+                لیست علاقه مندی‌ها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./addresses.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-map-pin icon addresses"></i>
+                آدرس ها
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./edit-information.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-user icon information"></i>
+                ویرایش اطلاعات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./edit-password.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-key icon password"></i>
+                ویرایش رمز عبور
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="../general-pages/Ticketing.html"
+                class="text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-headphones icon support"></i>
+                تماس با پشتیبانی
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <button
+                type="button"
+                class="d-flex btn logout-btn pr-0 shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-log-out icon logout"></i>
+                خروج
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <!-- Cart -->
+          <a
+            class="d-block float-left nav-link p-0 text-decoration-none mr-3 cart-btn position-relative"
+            href="../general-pages/cart.html"
+          >
+            <!-- Cart's Icon -->
+            <i class="di-cart nav-link p-0 icon d-block float-left"></i>
+
+            <!-- Order Counter -->
+            <span
+              class="counter ir-r text-white rounded-circle position-absolute text-center"
+              >1</span
+            >
+          </a>
+
+          <!-- Search Button -->
+          <i
+            class="search-btn float-left d-block di-search nav-link p-0 icon cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+
+      <div class="search-box position-fixed w-100 px-md-5 bg-white">
+        <form class="d-block w-100 h-100" action="">
+          <input
+            type="search"
+            class="ir-r text-right form-control shadow-none rounded-0 border-0 d-block float-right h-100 p-0 search-input"
+            placeholder="دنبال چه چیزی می‌گردید؟ برنج، نام فروشنده، کشت اول و..."
+            name=""
+            id=""
+          />
+
+          <i
+            class="di-clear cursor-pointer close-btn d-block float-right text-center"
+          ></i>
+        </form>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="dash-main">
+      <!-- Navigator -->
+      <div class="dash-nav">
+        <div class="holder">
+          <a
+            href="./dashboard.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-home icon home"></i>
+            داشبورد
+          </a>
+
+          <a
+            href="./orders-list.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-list orders icon"></i>
+            لیست سفارشات
+          </a>
+
+          <a
+            href="./favorites.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-heart icon favorites"></i>
+            لیست علاقه مندی‌ها
+          </a>
+
+          <a
+            href="./addresses.html"
+            class="active text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-map-pin icon addresses"></i>
+            آدرس ها
+          </a>
+
+          <a
+            href="./edit-information.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-user icon information"></i>
+            ویرایش اطلاعات
+          </a>
+
+          <a
+            href="./edit-password.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-key icon password"></i>
+            ویرایش رمز عبور
+          </a>
+
+          <a
+            href="../general-pages/Ticketing.html"
+            class="text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-headphones icon support"></i>
+            تماس با پشتیبانی
+          </a>
+
+          <button
+            type="button"
+            class="d-flex btn logout-btn shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-log-out icon logout"></i>
+            خروج
+          </button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <section class="dash-content">
+        <!-- Addresses -->
+        <div class="row">
+          <!-- Order List -->
+          <aside class="col-lg-12">
+            <!-- Title -->
+            <h3 class="d-block text-right c-dark mb-3 k-bl fs-big">
+              آدرس ها
+            </h3>
+
+            <div class="card border-0 p-3">
+              <!-- Add Address -->
+              <header class="mb-5">
+                <button
+                  type="button"
+                  class="btn btn-primary ir-r px-5 shadow-none d-block"
+                  data-toggle="modal"
+                  data-target="#addressModal"
+                >
+                  افزودن آدرس
+                </button>
+              </header>
+
+              <span class="d-block text-right ir-b fs-regular c-regular mb-3"
+                >سایر آدرس ها</span
+              >
+
+              <div class="more-address p-3">
+                <div class="row p-3 mb-3 address-item">
+                  <div class="col-md-9 mb-3 mb-md-0 pr-0">
+                    <p
+                      class="d-block ir-r fs-regular c-regular text-right mb-2"
+                    >
+                      آدرس: استان گیلان، شهرستان رشت، گلسار، ابتدای بلوار توحید،
+                      رستوران شورکولی.
+                    </p>
+
+                    <span
+                      class="d-block ir-r fs-regular c-regular text-right mb-2"
+                    >
+                      گیرنده: علی رضایی
+                    </span>
+
+                    <span
+                      class="d-block ir-r fs-regular c-regular text-right mb-2"
+                    >
+                      کد پستی: 1234567890
+                    </span>
+
+                    <span
+                      class="d-block ir-r fs-regular c-regular text-right mb-0 ltr"
+                    >
+                      شماره تماس: 02111111111
+                    </span>
+                  </div>
+                  <div class="col-md-3 options">
+                    <button
+                      type="button"
+                      class="btn p-0 ir-r shadow-none text-primary"
+                      data-toggle="modal"
+                      data-target="#addressModal"
+                    >
+                      ویرایش
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn p-0 mt-2 ir-r shadow-none text-danger delete-btn"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </div>
+
+                <div class="row p-3 mb-0 address-item">
+                  <div class="col-md-9 mb-3 mb-md-0 pr-0">
+                    <p
+                      class="d-block ir-r fs-regular c-regular text-right mb-2"
+                    >
+                      آدرس: استان گیلان، شهرستان رشت، گلسار، ابتدای بلوار توحید،
+                      رستوران شورکولی.
+                    </p>
+
+                    <span
+                      class="d-block ir-r fs-regular c-regular text-right mb-2"
+                    >
+                      گیرنده: علی رضایی
+                    </span>
+
+                    <span
+                      class="d-block ir-r fs-regular c-regular text-right mb-2"
+                    >
+                      کد پستی: 1234567890
+                    </span>
+
+                    <span
+                      class="d-block ir-r fs-regular c-regular text-right mb-0 ltr"
+                    >
+                      شماره تماس: 02111111111
+                    </span>
+                  </div>
+                  <div class="col-md-3 options">
+                    <button
+                      type="button"
+                      class="btn p-0 ir-r shadow-none text-primary"
+                      data-toggle="modal"
+                      data-target="#addressModal"
+                    >
+                      ویرایش
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn p-0 mt-2 ir-r shadow-none text-danger delete-btn"
+                    >
+                      حذف
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <!-- Add/Edit Address Modal Box -->
+    <div
+      class="modal fade"
+      id="addressModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form action="">
+              <!-- Full Name -->
+              <div
+                class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+              >
+                <!-- Lable -->
+                <label
+                  class="d-block text-right ir-r c-label mb-0 fs-small"
+                  for="fullName"
+                  >نام و نام خانوادگی
+                  <span class="text-danger ir-r">*</span></label
+                >
+
+                <!-- Input -->
+                <input
+                  required
+                  type="text"
+                  class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                  id="fullName"
+                  placeholder="نام و نام خانوادگی"
+                />
+
+                <!-- Error Message -->
+                <small
+                  id=""
+                  class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                  >پیام ارور</small
+                >
+              </div>
+
+              <!-- Phone Number -->
+              <div
+                class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+              >
+                <!-- Lable -->
+                <label
+                  class="d-block text-right ir-r c-label mb-0 fs-small"
+                  for="phoneNumber"
+                  >شماره تماس <span class="text-danger ir-r">*</span></label
+                >
+
+                <!-- Input -->
+                <input
+                  required
+                  type="tel"
+                  class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                  id="phoneNumber"
+                  placeholder="شماره تماس"
+                />
+
+                <!-- Error Message -->
+                <small
+                  id=""
+                  class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                  >پیام ارور</small
+                >
+              </div>
+
+              <!-- Province -->
+              <div
+                class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+              >
+                <!-- Lable -->
+                <label
+                  class="d-block text-right ir-r c-label mb-0 fs-small"
+                  for="province"
+                  >استان <span class="text-danger ir-r">*</span></label
+                >
+                <input
+                  placeholder="انتخاب استان"
+                  class="form-control ir-r d-block w-100 rounded-0 shadow-none px-0 border-0"
+                  list="provinces"
+                  name="province"
+                  id="province"
+                />
+
+                <datalist id="provinces">
+                  <option value="گیلان"></option>
+                  <option value="مازندران"></option>
+                  <option value="تهران"></option>
+                  <option value="فارس"></option>
+                </datalist>
+
+                <!-- Error Message -->
+                <small
+                  id=""
+                  class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                  >پیام ارور</small
+                >
+              </div>
+
+              <!-- City -->
+              <div
+                class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+              >
+                <!-- Lable -->
+                <label
+                  class="d-block text-right ir-r c-label mb-0 fs-small"
+                  for="city"
+                  >شهر <span class="text-danger ir-r">*</span></label
+                >
+                <input
+                  placeholder="انتخاب شهر"
+                  class="form-control ir-r d-block w-100 rounded-0 shadow-none px-0 border-0"
+                  list="cities"
+                  name="city"
+                  id="city"
+                />
+
+                <datalist id="cities">
+                  <option value="رشت"></option>
+                  <option value="بندر انزلی"></option>
+                  <option value="رودبار"></option>
+                  <option value="لاهیجان"></option>
+                </datalist>
+
+                <!-- Error Message -->
+                <small
+                  id=""
+                  class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                  >پیام ارور</small
+                >
+              </div>
+
+              <!-- Address Details -->
+              <div
+                class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+              >
+                <!-- Lable -->
+                <label
+                  class="d-block text-right ir-r c-label mb-0 fs-small"
+                  for="city"
+                  >جزئیات آدرس <span class="text-danger ir-r">*</span></label
+                >
+
+                <textarea
+                  class="ir-r form-control px-0 shadow-none border-0"
+                  placeholder="بلوار، خیابان، کوچه، بن بست و..."
+                  name=""
+                  id=""
+                  rows="3"
+                ></textarea>
+
+                <!-- Error Message -->
+                <small
+                  id=""
+                  class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                  >پیام ارور</small
+                >
+              </div>
+
+              <!-- ZIP Code -->
+              <div
+                class="form-group border border-secondary rounded p-2 mb-3 bg-white"
+              >
+                <!-- Lable -->
+                <label
+                  class="d-block text-right ir-r c-label mb-0 fs-small"
+                  for="zipCode"
+                  >کدپستی <span class="text-danger ir-r">*</span></label
+                >
+                <input
+                  type="text"
+                  placeholder="انتخاب شهر"
+                  class="form-control ir-r d-block w-100 rounded-0 shadow-none px-0 border-0"
+                  id="zipCode"
+                />
+
+                <!-- Error Message -->
+                <small
+                  id=""
+                  class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                  >پیام ارور</small
+                >
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                class="btn btn-success ir-r d-block mb-3 px-5"
+                type="submit"
+              >
+                افزودن
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      $(".delete-btn").on("click", function () {
+        $(this).parents(".address-item").remove();
+      });
+    </script>
+  </body>
+</html>

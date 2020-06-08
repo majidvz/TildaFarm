@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tilda-dashboard';
-  src:  url('fonts/tilda-dashboard.eot?gluruy');
-  src:  url('fonts/tilda-dashboard.eot?gluruy#iefix') format('embedded-opentype'),
-    url('fonts/tilda-dashboard.ttf?gluruy') format('truetype'),
-    url('fonts/tilda-dashboard.woff?gluruy') format('woff'),
-    url('fonts/tilda-dashboard.svg?gluruy#tilda-dashboard') format('svg');
+  src:  url('fonts/tilda-dashboard.eot?qskw8t');
+  src:  url('fonts/tilda-dashboard.eot?qskw8t#iefix') format('embedded-opentype'),
+    url('fonts/tilda-dashboard.ttf?qskw8t') format('truetype'),
+    url('fonts/tilda-dashboard.woff?qskw8t') format('woff'),
+    url('fonts/tilda-dashboard.svg?qskw8t#tilda-dashboard') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.di-p-heart-o:before {
+  content: "\e90e";
+}
+.di-p-heart:before {
+  content: "\e90f";
+}
+.di-star-o:before {
+  content: "\e90c";
+}
+.di-star:before {
+  content: "\e90d";
+}
 .di-clear:before {
   content: "\e90b";
 }

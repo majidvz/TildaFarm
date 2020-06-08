@@ -30,10 +30,18 @@ $(window).scroll(function () {
 
 // Product Add to Favorites Button
 $(".product-card .add-favorites").click(function () {
-  if ($(this).children().hasClass("icon-heart-o")) {
-    $(this).children().removeClass("icon-heart-o").addClass("icon-heart");
+  if (!$(this).parents().hasClass("dashboard")) {
+    if ($(this).children().hasClass("icon-heart-o")) {
+      $(this).children().removeClass("icon-heart-o").addClass("icon-heart");
+    } else {
+      $(this).children().removeClass("icon-heart").addClass("icon-heart-o");
+    }
   } else {
-    $(this).children().removeClass("icon-heart").addClass("icon-heart-o");
+    if ($(this).children().hasClass("di-p-heart-o")) {
+      $(this).children().removeClass("di-p-heart-o").addClass("di-p-heart");
+    } else {
+      $(this).children().removeClass("di-p-heart").addClass("di-p-heart-o");
+    }
   }
 });
 

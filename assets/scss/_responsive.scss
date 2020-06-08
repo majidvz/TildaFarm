@@ -61,6 +61,12 @@
         padding: 20px;
       }
     }
+
+    .address-item {
+      .options {
+        align-items: start;
+      }
+    }
   }
 }
 
