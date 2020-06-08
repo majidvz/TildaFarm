@@ -1,0 +1,16 @@
+.page-404 {
+  width: 60%;
+  padding: 20px;
+  .error-header {
+    width: 70%;
+    border-radius: 5px;
+    height: 200px;
+    line-height: 200px;
+    background: url(../img/error-404.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 4em;
+    text-shadow: 0 3px 5px #00000050;
+    user-select: none;
+    letter-spacing: 0.2em;
+  }
+}

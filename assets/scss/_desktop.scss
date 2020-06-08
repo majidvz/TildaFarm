@@ -130,5 +130,16 @@
         height: 100%;
       }
     }
+
+    .home {
+      .user-information {
+        .ui-item {
+          border-bottom: 1px solid #eee;
+          &:nth-child(2n-1) {
+            border-left: 1px solid #eee;
+          }
+        }
+      }
+    }
   }
 }
