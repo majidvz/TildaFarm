@@ -99,10 +99,13 @@
       // Navigator
       .dash-nav {
         display: flex;
-        align-items: center;
+        align-items: start;
         border-left: 1px solid #eee;
-        width: 180px;
-        height: 100%;
+        width: 200px;
+        height: calc(100% - 20px);
+        overflow-y: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .nav-item {
           display: flex;
@@ -126,7 +129,7 @@
       .dash-content {
         padding: 50px;
         overflow-y: auto;
-        width: calc(100% - 180px);
+        width: calc(100% - 200px);
         height: 100%;
       }
     }

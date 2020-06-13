@@ -123,6 +123,52 @@
       justify-content: center;
     }
   }
+
+  .reply-form {
+    height: 0;
+    transition: 0.3s;
+    overflow-y: hidden;
+    &.open {
+      height: auto;
+      overflow-y: inherit;
+    }
+  }
+
+  .dash-item {
+    height: 100px;
+
+    &::before {
+      position: absolute;
+      font-size: 5em;
+      bottom: -0.2em;
+      left: -0.2em;
+      transform: rotate(10deg);
+    }
+
+    &.sale {
+      background: #7cb342;
+      color: #f1f8e9;
+      &::before {
+        color: #aed581;
+      }
+    }
+
+    &.balance {
+      background: #03a9f4;
+      color: #e1f5fe;
+      &::before {
+        color: #4fc3f7;
+      }
+    }
+
+    &.amount {
+      background: #d81b60;
+      color: #fce4ec;
+      &::before {
+        color: #f06292;
+      }
+    }
+  }
 }
 
 .di-list {

@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title -->
-    <title>مزرعه تیلدا | ویرایش اطلاعات</title>
+    <title>مزرعه تیلدا | درخواست تسویه حساب</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/reset.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/fontIcons/dashboard/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css"
+    />
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
 
@@ -115,31 +120,61 @@
 
             <li class="nav-item pr-0 d-lg-none">
               <a
-                href="./orders-list.html"
+                href="./my-products.html"
                 class="text-decoration-none c-regular fs-small ir-r"
               >
-                <i class="di-list orders icon"></i>
+                <i class="di-shopping-bag support icon"></i>
+                محصولات من
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./orders.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-list addresses icon"></i>
                 لیست سفارشات
               </a>
             </li>
 
             <li class="nav-item pr-0 d-lg-none">
               <a
-                href="./favorites.html"
+                href="./comments.html"
                 class="text-decoration-none c-regular fs-small ir-r"
               >
-                <i class="di-heart icon favorites"></i>
-                لیست علاقه مندی‌ها
+                <i class="di-message-square information icon"></i>
+                نظرات
               </a>
             </li>
 
             <li class="nav-item pr-0 d-lg-none">
               <a
-                href="./addresses.html"
+                href="./incomes.html"
                 class="text-decoration-none c-regular fs-small ir-r"
               >
-                <i class="di-map-pin icon addresses"></i>
-                آدرس ها
+                <i class="di-dollar-sign orders icon"></i>
+                گزارشات فروش
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./reckoning-request.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-payment password icon"></i>
+                درخواست تسویه حساب
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./bank-account-information.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-credit-card support icon"></i>
+                ویرایش اطلاعات بانکی
               </a>
             </li>
 
@@ -186,21 +221,6 @@
         </div>
 
         <div class="buttons">
-          <!-- Cart -->
-          <a
-            class="d-block float-left nav-link p-0 text-decoration-none mr-3 cart-btn position-relative"
-            href="../general-pages/cart.html"
-          >
-            <!-- Cart's Icon -->
-            <i class="di-cart nav-link p-0 icon d-block float-left"></i>
-
-            <!-- Order Counter -->
-            <span
-              class="counter ir-r text-white rounded-circle position-absolute text-center"
-              >1</span
-            >
-          </a>
-
           <!-- Search Button -->
           <i
             class="search-btn float-left d-block di-search nav-link p-0 icon cursor-pointer"
@@ -239,32 +259,56 @@
           </a>
 
           <a
-            href="./orders-list.html"
+            href="./my-products.html"
             class="text-decoration-none nav-item c-regular fs-small ir-r"
           >
-            <i class="di-list orders icon"></i>
+            <i class="di-shopping-bag icon support"></i>
+            محصولات من
+          </a>
+
+          <a
+            href="./orders.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-list icon addresses"></i>
             لیست سفارشات
           </a>
 
           <a
-            href="./favorites.html"
+            href="./comments.html"
             class="text-decoration-none nav-item c-regular fs-small ir-r"
           >
-            <i class="di-heart icon favorites"></i>
-            لیست علاقه مندی‌ها
+            <i class="di-message-square icon information"></i>
+            نظرات
           </a>
 
           <a
-            href="./addresses.html"
+            href="./incomes.html"
             class="text-decoration-none nav-item c-regular fs-small ir-r"
           >
-            <i class="di-map-pin icon addresses"></i>
-            آدرس ها
+            <i class="di-dollar-sign icon orders"></i>
+            گزارشات فروش
+          </a>
+
+          <a
+            href="./reckoning-request.html"
+            class="active text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-payment icon password"></i>
+            درخواست تسویه حساب
+          </a>
+
+          <a
+            href="./bank-account-information.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-credit-card icon support"></i>
+            ویرایش اطلاعات بانکی
           </a>
 
           <a
             href="./edit-information.html"
-            class="active text-decoration-none nav-item c-regular fs-small ir-r"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
           >
             <i class="di-user icon information"></i>
             ویرایش اطلاعات
@@ -298,22 +342,68 @@
 
       <!-- Content -->
       <section class="dash-content">
-        <!-- User Information -->
+        <!-- Reckoning Request Form -->
         <div class="row user-information">
-          <div class="col-lg-12">
+          <div class="col-lg-6">
             <header
               class="d-flex flex-row mb-3 justify-content-between align-items-center mb-3"
             >
               <!-- Title -->
               <h3 class="d-block text-right mb-0 c-dark k-bl fs-big">
-                ویرایش اطلاعات شخصی
+                درخواست تسویه حساب
               </h3>
             </header>
 
             <div class="card p-3 border-0">
               <div class="row mb-3">
-                <!-- Full Name -->
-                <aside class="col-md-6 c-regular mb-0 py-3 ui-item">
+                <aside class="col-lg-12">
+                  <div
+                    class="alert alert-info ir-r p-3 text-right mb-3"
+                    role="alert"
+                  >
+                    مبلغ قابل برداشت: <span class="ir-b">400,000 تومان</span>
+                  </div>
+
+                  <img
+                    src="../assets/img/IBAN.png"
+                    class="d-block mb-3"
+                    width="100"
+                    alt="شبا"
+                  />
+
+                  <div class="input-group mb-3">
+                    <input disabled type="text" class="form-control text-right
+                    placeholder="" value="123456789012345678901234"
+                    aria-label="Username" aria-describedby="basic-addon1" />
+
+                    <div class="input-group-prepend">
+                      <span class="input-group-text ir-r" id="basic-addon1"
+                        >IR</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input
+                      value="بانک ملت"
+                      disabled
+                      type="text"
+                      class="form-control ir-r"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+
+                    <div class="input-group-prepend">
+                      <a
+                        href="./bank-account-information.html"
+                        class="btn btn-outline-secondary ir-r shadow-none"
+                      >
+                        ویرایش
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Amount -->
                   <div
                     class="form-group border border-secondary rounded p-2 mb-0"
                   >
@@ -321,126 +411,14 @@
                     <label
                       class="d-block text-right ir-r c-label mb-0 fs-small"
                       for="fullName"
-                      >نام و نام خانوادگی</label
-                    >
+                      >مبلغ درخواستی را به ریال وارد کنید
+                    </label>
 
                     <!-- Input -->
                     <input
-                      type="tel"
+                      type="text"
                       class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                      id="fullName"
-                      value="مجید ولی زاده"
-                      placeholder="نام و نام خانوادگی"
-                    />
-
-                    <!-- Error Message -->
-                    <small
-                      id=""
-                      class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                      >پیام ارور</small
-                    >
-                  </div>
-                </aside>
-
-                <!-- Phone Number -->
-                <aside class="col-md-6 c-regular mb-0 py-3 ui-item">
-                  <div
-                    class="form-group border border-secondary rounded p-2 mb-0"
-                  >
-                    <!-- Lable -->
-                    <label
-                      class="d-block text-right ir-r c-label mb-0 fs-small"
-                      for="phoneNumber"
-                      >شماره موبایل</label
-                    >
-
-                    <!-- Input -->
-                    <input
-                      disabled
-                      type="tel"
-                      class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                      id="phoneNumber"
-                      placeholder="شماره موبایل"
-                      value="09116742083"
-                    />
-                  </div>
-                </aside>
-
-                <!-- Email -->
-                <aside class="col-md-6 c-regular mb-0 py-3 ui-item">
-                  <div
-                    class="form-group border border-secondary rounded p-2 mb-0"
-                  >
-                    <!-- Lable -->
-                    <label
-                      class="d-block text-right ir-r c-label mb-0 fs-small"
-                      for="email"
-                      >ایمیل <span class="text-danger ir-r">*</span></label
-                    >
-
-                    <!-- Input -->
-                    <input
-                      type="email"
-                      class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                      id="email"
-                      placeholder="example@email.com"
-                    />
-                  </div>
-                </aside>
-
-                <!-- National Code -->
-                <aside class="col-md-6 c-regular mb-0 py-3 ui-item">
-                  <div
-                    class="form-group border border-secondary rounded p-2 mb-0"
-                  >
-                    <!-- Lable -->
-                    <label
-                      class="d-block text-right ir-r c-label mb-0 fs-small"
-                      for="nationalCode"
-                      >کد ملی</label
-                    >
-
-                    <!-- Input -->
-                    <input
-                      type="tel"
-                      class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                      id="nationalCode"
-                      maxlength="10"
-                      value="1234567890"
-                      placeholder="کد ملی"
-                    />
-
-                    <!-- Error Message -->
-                    <small
-                      id=""
-                      class="form-text error-message d-none text-right fs-small ir-r text-danger"
-                      >پیام ارور</small
-                    >
-                  </div>
-                </aside>
-
-                <!-- Post Code -->
-                <aside
-                  class="col-md-6 c-regular mb-0 py-3 border-bottom-0 ui-item"
-                >
-                  <div
-                    class="form-group border border-secondary rounded p-2 mb-0"
-                  >
-                    <!-- Lable -->
-                    <label
-                      class="d-block text-right ir-r c-label mb-0 fs-small"
-                      for="postCode"
-                      >کد پستی</label
-                    >
-
-                    <!-- Input -->
-                    <input
-                      type="tel"
-                      class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
-                      id="postCode"
-                      maxlength="10"
-                      value="1234567890"
-                      placeholder="کد پستی"
+                      placeholder="مبلغ درخواستی"
                     />
 
                     <!-- Error Message -->
@@ -453,7 +431,7 @@
                 </aside>
               </div>
 
-              <button type="submit" class="btn btn-success ir-r d-block w-25">
+              <button type="submit" class="btn btn-warning ir-r d-block w-25">
                 ثبت
               </button>
             </div>

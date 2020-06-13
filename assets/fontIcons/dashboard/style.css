@@ -1,19 +1,20 @@
 @font-face {
-  font-family: 'tilda-dashboard';
-  src:  url('fonts/tilda-dashboard.eot?qskw8t');
-  src:  url('fonts/tilda-dashboard.eot?qskw8t#iefix') format('embedded-opentype'),
-    url('fonts/tilda-dashboard.ttf?qskw8t') format('truetype'),
-    url('fonts/tilda-dashboard.woff?qskw8t') format('woff'),
-    url('fonts/tilda-dashboard.svg?qskw8t#tilda-dashboard') format('svg');
+  font-family: "tilda-dashboard";
+  src: url("fonts/tilda-dashboard.eot?h4ijxm");
+  src: url("fonts/tilda-dashboard.eot?h4ijxm#iefix") format("embedded-opentype"),
+    url("fonts/tilda-dashboard.ttf?h4ijxm") format("truetype"),
+    url("fonts/tilda-dashboard.woff?h4ijxm") format("woff"),
+    url("fonts/tilda-dashboard.svg?h4ijxm#tilda-dashboard") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-i {
+i,
+div {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'tilda-dashboard' !important;
-  speak: none;
+  font-family: "tilda-dashboard" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,6 +26,12 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.di-payment:before {
+  content: "\e926";
+}
+.di-megaphone:before {
+  content: "\e912";
+}
 .di-p-heart-o:before {
   content: "\e90e";
 }
@@ -46,6 +53,60 @@ i {
 .di-search:before {
   content: "\e909";
 }
+.di-chevron-up:before {
+  content: "\e916";
+}
+.di-chevrons-down:before {
+  content: "\e917";
+}
+.di-chevrons-left:before {
+  content: "\e918";
+}
+.di-chevrons-right:before {
+  content: "\e919";
+}
+.di-chevrons-up:before {
+  content: "\e91a";
+}
+.di-chrome:before {
+  content: "\e91b";
+}
+.di-circle:before {
+  content: "\e91c";
+}
+.di-clipboard:before {
+  content: "\e91d";
+}
+.di-codepen:before {
+  content: "\e91e";
+}
+.di-codesandbox:before {
+  content: "\e91f";
+}
+.di-coffee:before {
+  content: "\e920";
+}
+.di-columns:before {
+  content: "\e921";
+}
+.di-command:before {
+  content: "\e922";
+}
+.di-compass:before {
+  content: "\e923";
+}
+.di-copy:before {
+  content: "\e924";
+}
+.di-corner-down-left:before {
+  content: "\e925";
+}
+.di-credit-card:before {
+  content: "\e910";
+}
+.di-dollar-sign:before {
+  content: "\e911";
+}
 .di-headphones:before {
   content: "\e908";
 }
@@ -57,6 +118,15 @@ i {
 }
 .di-log-out:before {
   content: "\e906";
+}
+.di-message-square:before {
+  content: "\e913";
+}
+.di-shopping-bag:before {
+  content: "\e914";
+}
+.di-upload:before {
+  content: "\e915";
 }
 .di-user:before {
   content: "\e907";

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="dashboard" lang="fa">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>مزرعه تیلدا | نظرات</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/fontIcons/dashboard/style.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body class="bg-body">
+    <!-- Header -->
+    <header class="pages-header position-fixed w-100">
+      <!-- Top -->
+      <div
+        class="header-top py-2 d-flex flex-row justify-content-between d-lg-none"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" href="../general-pages/index.html">
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+
+        <!-- User -->
+      </div>
+
+      <nav class="navbar w-100 navbar-expand-lg navbar-light px-lg-5 px-3 py-0">
+        <a
+          class="navbar-brand d-none mr-0 d-lg-block"
+          href="../general-pages/index.html"
+        >
+          <img src="../assets/img/logo.svg" height="30" alt="مزرعه تیلدا" />
+        </a>
+        <button
+          class="navbar-toggler border-0 pr-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/index.html"
+                >خانه</a
+              >
+            </li>
+
+            <li class="nav-item my-0 dropdown pr-0 pr-md-4">
+              <a
+                class="nav-link toggle ir-r fs-small"
+                href="../general-pages/products.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                محصولات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج طارم</a
+                >
+                <a
+                  class="dropdown-item ir-r text-right fs-small c-regular"
+                  href="../general-pages/products.html"
+                  >برنج هاشمی</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/blog.html"
+                >وبلاگ</a
+              >
+            </li>
+
+            <li class="nav-item my-0 pr-0 pr-md-4">
+              <a
+                class="nav-link ir-r fs-small"
+                href="../general-pages/contact-us.html"
+                >تماس با ما</a
+              >
+            </li>
+
+            <div class="dropdown-divider"></div>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./dashboard.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-home icon home"></i>
+                داشبورد
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./my-products.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-shopping-bag support icon"></i>
+                محصولات من
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./orders.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-list addresses icon"></i>
+                لیست سفارشات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./comments.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-message-square information icon"></i>
+                نظرات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./incomes.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-dollar-sign orders icon"></i>
+                گزارشات فروش
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="reckoning-request.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-payment password icon"></i>
+                درخواست تسویه حساب
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./bank-account-information.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-credit-card support icon"></i>
+                ویرایش اطلاعات بانکی
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./edit-information.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-user icon information"></i>
+                ویرایش اطلاعات
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="./edit-password.html"
+                class="text-decoration-none c-regular fs-small ir-r"
+              >
+                <i class="di-key icon password"></i>
+                ویرایش رمز عبور
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <a
+                href="../general-pages/Ticketing.html"
+                class="text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-headphones icon support"></i>
+                تماس با پشتیبانی
+              </a>
+            </li>
+
+            <li class="nav-item pr-0 d-lg-none">
+              <button
+                type="button"
+                class="d-flex btn logout-btn pr-0 shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none w-100 text-center c-regular fs-small ir-r"
+              >
+                <i class="di-log-out icon logout"></i>
+                خروج
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <!-- Search Button -->
+          <i
+            class="search-btn float-left d-block di-search nav-link p-0 icon cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+
+      <div class="search-box position-fixed w-100 px-md-5 bg-white">
+        <form class="d-block w-100 h-100" action="">
+          <input
+            type="search"
+            class="ir-r text-right form-control shadow-none rounded-0 border-0 d-block float-right h-100 p-0 search-input"
+            placeholder="دنبال چه چیزی می‌گردید؟ برنج، نام فروشنده، کشت اول و..."
+            name=""
+            id=""
+          />
+
+          <i
+            class="di-clear cursor-pointer close-btn d-block float-right text-center"
+          ></i>
+        </form>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div class="dash-main">
+      <!-- Navigator -->
+      <div class="dash-nav">
+        <div class="holder">
+          <a
+            href="./dashboard.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-home icon home"></i>
+            داشبورد
+          </a>
+
+          <a
+            href="./my-products.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-shopping-bag icon support"></i>
+            محصولات من
+          </a>
+
+          <a
+            href="./orders.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-list icon addresses"></i>
+            لیست سفارشات
+          </a>
+
+          <a
+            href="./comments.html"
+            class="active text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-message-square icon information"></i>
+            نظرات
+          </a>
+
+          <a
+            href="./incomes.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-dollar-sign icon orders"></i>
+            گزارشات فروش
+          </a>
+
+          <a
+            href="./reckoning-request.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-payment icon password"></i>
+            درخواست تسویه حساب
+          </a>
+
+          <a
+            href="./bank-account-information.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-credit-card icon support"></i>
+            ویرایش اطلاعات بانکی
+          </a>
+
+          <a
+            href="./edit-information.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-user icon information"></i>
+            ویرایش اطلاعات
+          </a>
+
+          <a
+            href="./edit-password.html"
+            class="text-decoration-none nav-item c-regular fs-small ir-r"
+          >
+            <i class="di-key icon password"></i>
+            ویرایش رمز عبور
+          </a>
+
+          <a
+            href="../general-pages/Ticketing.html"
+            class="text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-headphones icon support"></i>
+            تماس با پشتیبانی
+          </a>
+
+          <button
+            type="button"
+            class="d-flex btn logout-btn shadow-none border-0 rounded-0 justify-content-start align-items-center text-decoration-none nav-item w-100 text-center c-regular fs-small ir-r"
+          >
+            <i class="di-log-out icon logout"></i>
+            خروج
+          </button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <section class="dash-content">
+        <!-- Latest Order -->
+        <div class="row">
+          <!-- Order List -->
+          <aside class="col-lg-12">
+            <!-- Title -->
+            <h3 class="d-block text-right c-dark mb-3 k-bl fs-big">
+              محصولات من
+            </h3>
+
+            <div class="row">
+              <aside class="col-md-6 mb-3">
+                <div class="card border-0 p-3">
+                  <span class="d-block text-right ir-b fs-small c-regular mb-3">
+                    مجید ولی زاده
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-3">
+                    عنوان محصول:
+                    <a
+                      href="../general-pages/product-detail.html"
+                      class="text-decoration-none"
+                      >برنج طارم</a
+                    >
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-2">
+                    نظر:
+                  </span>
+
+                  <p
+                    class="d-block text-right ir-r fs-small c-regular mb-3 border rounded p-3"
+                  >
+                    سلام وقت بخیر. محصول بسیار خوبی، ممنون از شما.
+                  </p>
+
+                  <span
+                    class="reply-btn btn btn-primary ir-r w-50 cursor-pointer"
+                    >پاسخ به این نظر</span
+                  >
+
+                  <!-- Reply -->
+                  <div class="reply-form mt-3">
+                    <div
+                      class="form-group border border-secondary mb-3 rounded p-2 bg-white"
+                    >
+                      <!-- Lable -->
+                      <label
+                        class="d-block text-right ir-r c-label mb-0 fs-small"
+                        for="reply"
+                        >پاسخ به این نظر
+                      </label>
+
+                      <textarea
+                        class="ir-r form-control px-0 shadow-none border-0"
+                        placeholder="پاسخ خود را در این قسمت بنویسید..."
+                        name=""
+                        id="reply"
+                        rows="2"
+                      ></textarea>
+
+                      <!-- Error Message -->
+                      <small
+                        id=""
+                        class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                        >پیام ارور</small
+                      >
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-success shadow-none ir-r d-block w-25 ml-auto"
+                    >
+                      ثبت
+                    </button>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 mb-3">
+                <div class="card border-0 p-3">
+                  <span class="d-block text-right ir-b fs-small c-regular mb-3">
+                    مجید ولی زاده
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-3">
+                    عنوان محصول:
+                    <a
+                      href="../general-pages/product-detail.html"
+                      class="text-decoration-none"
+                      >برنج طارم</a
+                    >
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-2">
+                    نظر:
+                  </span>
+
+                  <p
+                    class="d-block text-right ir-r fs-small c-regular mb-3 border rounded p-3"
+                  >
+                    سلام وقت بخیر. محصول بسیار خوبی، ممنون از شما.
+                  </p>
+
+                  <span
+                    class="reply-btn btn btn-primary ir-r w-50 cursor-pointer"
+                    >پاسخ به این نظر</span
+                  >
+
+                  <!-- Reply -->
+                  <div class="reply-form mt-3">
+                    <div
+                      class="form-group border border-secondary mb-3 rounded p-2 bg-white"
+                    >
+                      <!-- Lable -->
+                      <label
+                        class="d-block text-right ir-r c-label mb-0 fs-small"
+                        for="reply"
+                        >پاسخ به این نظر
+                      </label>
+
+                      <textarea
+                        class="ir-r form-control px-0 shadow-none border-0"
+                        placeholder="پاسخ خود را در این قسمت بنویسید..."
+                        name=""
+                        id="reply"
+                        rows="2"
+                      ></textarea>
+
+                      <!-- Error Message -->
+                      <small
+                        id=""
+                        class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                        >پیام ارور</small
+                      >
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-success shadow-none ir-r d-block w-25 ml-auto"
+                    >
+                      ثبت
+                    </button>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 mb-3">
+                <div class="card border-0 p-3">
+                  <span class="d-block text-right ir-b fs-small c-regular mb-3">
+                    مجید ولی زاده
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-3">
+                    عنوان محصول:
+                    <a
+                      href="../general-pages/product-detail.html"
+                      class="text-decoration-none"
+                      >برنج طارم</a
+                    >
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-2">
+                    نظر:
+                  </span>
+
+                  <p
+                    class="d-block text-right ir-r fs-small c-regular mb-3 border rounded p-3"
+                  >
+                    سلام وقت بخیر. محصول بسیار خوبی، ممنون از شما.
+                  </p>
+
+                  <span
+                    class="reply-btn btn btn-primary ir-r w-50 cursor-pointer"
+                    >پاسخ به این نظر</span
+                  >
+
+                  <!-- Reply -->
+                  <div class="reply-form mt-3">
+                    <div
+                      class="form-group border border-secondary mb-3 rounded p-2 bg-white"
+                    >
+                      <!-- Lable -->
+                      <label
+                        class="d-block text-right ir-r c-label mb-0 fs-small"
+                        for="reply"
+                        >پاسخ به این نظر
+                      </label>
+
+                      <textarea
+                        class="ir-r form-control px-0 shadow-none border-0"
+                        placeholder="پاسخ خود را در این قسمت بنویسید..."
+                        name=""
+                        id="reply"
+                        rows="2"
+                      ></textarea>
+
+                      <!-- Error Message -->
+                      <small
+                        id=""
+                        class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                        >پیام ارور</small
+                      >
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-success shadow-none ir-r d-block w-25 ml-auto"
+                    >
+                      ثبت
+                    </button>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="col-md-6 mb-0">
+                <div class="card border-0 p-3">
+                  <span class="d-block text-right ir-b fs-small c-regular mb-3">
+                    مجید ولی زاده
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-3">
+                    عنوان محصول:
+                    <a
+                      href="../general-pages/product-detail.html"
+                      class="text-decoration-none"
+                      >برنج طارم</a
+                    >
+                  </span>
+
+                  <span class="d-block text-right ir-r fs-small c-regular mb-2">
+                    نظر:
+                  </span>
+
+                  <p
+                    class="d-block text-right ir-r fs-small c-regular mb-3 border rounded p-3"
+                  >
+                    سلام وقت بخیر. محصول بسیار خوبی، ممنون از شما.
+                  </p>
+
+                  <span
+                    class="reply-btn btn btn-primary ir-r w-50 cursor-pointer"
+                    >پاسخ به این نظر</span
+                  >
+
+                  <!-- Reply -->
+                  <div class="reply-form mt-3">
+                    <div
+                      class="form-group border border-secondary mb-3 rounded p-2 bg-white"
+                    >
+                      <!-- Lable -->
+                      <label
+                        class="d-block text-right ir-r c-label mb-0 fs-small"
+                        for="reply"
+                        >پاسخ به این نظر
+                      </label>
+
+                      <textarea
+                        class="ir-r form-control px-0 shadow-none border-0"
+                        placeholder="پاسخ خود را در این قسمت بنویسید..."
+                        name=""
+                        id="reply"
+                        rows="2"
+                      ></textarea>
+
+                      <!-- Error Message -->
+                      <small
+                        id=""
+                        class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                        >پیام ارور</small
+                      >
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-success shadow-none ir-r d-block w-25 ml-auto"
+                    >
+                      ثبت
+                    </button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <div
+      class="modal fade"
+      id="editProduct"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-group border border-secondary rounded p-2 mb-0">
+              <!-- Lable -->
+              <label
+                class="d-block text-right ir-r c-label mb-0 fs-small"
+                for="amount"
+                >مقدار برنج باقی مانده</label
+              >
+
+              <!-- Input -->
+              <input
+                type="text"
+                class="form-control text-right ir-r fs-regular border-0 shadow-none px-0"
+                id="amount"
+                placeholder="مقدار برنج باقی مانده"
+              />
+
+              <!-- Error Message -->
+              <small
+                id=""
+                class="form-text error-message d-none text-right fs-small ir-r text-danger"
+                >پیام ارور</small
+              >
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success ir-r">تایید</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      $(".reply-btn").on("click", function () {
+        if (!$(this).siblings(".reply-form").hasClass("open")) {
+          $(this).siblings(".reply-form").addClass("open");
+        } else {
+          $(this).siblings(".reply-form").removeClass("open");
+        }
+      });
+    </script>
+  </body>
+</html>
